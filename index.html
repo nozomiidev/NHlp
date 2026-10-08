@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#080A12" />
-  <meta name="description" content="NashHash — Webサービス、スマートフォンアプリ、AI関連サービス、コンテンツマーケティングの企画・制作・運営準備を行うデジタルプロダクトスタジオ。" />
-  <meta property="og:title" content="NashHash — Digital Product Studio" />
-  <meta property="og:description" content="Software, mobile apps, AI tools, and content systems — built with precision, privacy, and momentum." />
+  <meta name="description" content="NashHash develops trust infrastructure for autonomous AI agents: local-first personal AI, secure delegation, cryptographic identity, verifiable agreements, and custom agent engineering." />
+  <meta property="og:title" content="NashHash — Trust Infrastructure for Autonomous Agents" />
+  <meta property="og:description" content="Autonomy needs boundaries. Trust needs proof. Building verifiable trust, secure delegation, and accountable AI agent systems." />
   <meta property="og:type" content="website" />
-  <title>NashHash — Digital Product Studio</title>
+  <title>NashHash — Trust Infrastructure for Autonomous Agents</title>
   <style>
     :root {
       --bg: #070914;
@@ -199,10 +199,10 @@
     }
     h1 {
       margin: 22px 0 0;
-      font-size: clamp(52px, 8.2vw, 112px);
-      line-height: .9;
-      letter-spacing: -.08em;
-      max-width: 900px;
+      font-size: clamp(46px, 6.8vw, 90px);
+      line-height: .99;
+      letter-spacing: -.07em;
+      max-width: 980px;
     }
     .gradient-text {
       background:
@@ -490,6 +490,8 @@
       font-size: 14.5px;
     }
 
+    .status-tag { display: inline-block; margin-bottom: 12px; color: var(--cyan); font-size: 11px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+    .research-disclaimer { max-width: 1100px; margin: 25px auto 0; color: var(--muted); font-size: 13px; line-height: 1.85; }
     .showcase {
       margin-top: 16px;
       border-radius: var(--radius-xl);
@@ -772,12 +774,12 @@
           <span>NashHash</span>
         </a>
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#studio">Studio</a>
-          <a href="#systems">Systems</a>
-          <a href="#process">Process</a>
+          <a href="#studio">Mission</a>
+          <a href="#systems">Research</a>
+          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="nav-cta" href="#contact">Start a build</a>
+        <a class="nav-cta" href="#contact">Discuss a project</a>
       </div>
     </header>
 
@@ -785,33 +787,23 @@
       <section class="hero">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow"><span class="pulse"></span> Digital Product Studio</div>
-            <h1><span class="gradient-text">Ship sharper software.</span><br />Move with intent.</h1>
+            <div class="eyebrow"><span class="pulse"></span> AI Agent Research &amp; Infrastructure</div>
+            <h1><span class="gradient-text">Autonomy needs boundaries.</span><br />Trust needs proof.</h1>
             <p class="hero-copy">
-              NashHash is a compact digital product studio for web services, mobile apps,
-              software tools, AI-related systems, and content engines. We design from first principles,
-              build with operational discipline, and polish the final surface until it feels inevitable.
+              NashHash develops trust infrastructure for autonomous AI agents. We build toward systems
+              that combine local-first intelligence, cryptographic identity, scoped delegation, and
+              verifiable records—so people and AI agents can collaborate with clearer boundaries.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">Contact NashHash</a>
-              <a class="btn" href="#systems">Explore capabilities</a>
+              <a class="btn btn-primary" href="#systems">Explore our research</a>
+              <a class="btn" href="#contact">Discuss a project</a>
             </div>
-            <div class="hero-meta" aria-label="Core principles">
-              <div class="metric">
-                <strong>01</strong>
-                <span>Product architecture before decoration.</span>
-              </div>
-              <div class="metric">
-                <strong>02</strong>
-                <span>Privacy-aware public presence for modern app distribution.</span>
-              </div>
-              <div class="metric">
-                <strong>03</strong>
-                <span>AI-assisted velocity without surrendering craft.</span>
-              </div>
+            <div class="hero-meta" aria-label="Engineering principles">
+              <div class="metric"><strong>01</strong><span>Human authorization and revocable agent permissions.</span></div>
+              <div class="metric"><strong>02</strong><span>Cryptographic evidence and independently checkable records.</span></div>
+              <div class="metric"><strong>03</strong><span>Local-first autonomy with optional cloud reasoning.</span></div>
             </div>
           </div>
-
           <div class="hero-art" aria-hidden="true">
             <div class="orb-shell" id="orb">
               <div class="prism">
@@ -844,20 +836,19 @@
                 </div>
               </div>
             </div>
-
             <div class="floating-card fc-1">
-              <h3>App Store Ready</h3>
-              <p>Structure for domains, support channels, privacy pages, and distribution workflows.</p>
-              <div class="tag-row"><span class="tag">iOS</span><span class="tag">Android</span><span class="tag">Web</span></div>
+              <h3>Local-First Personal AI</h3>
+              <p>Personal agents for resource-constrained devices, with selective access to more capable cloud models.</p>
+              <div class="tag-row"><span class="tag">Mobile</span><span class="tag">On-device</span><span class="tag">Hybrid</span></div>
             </div>
             <div class="floating-card fc-2">
-              <h3>AI Systems</h3>
-              <p>Research, prototyping, tool design, automation, and AI-native product scaffolding.</p>
-              <div class="tag-row"><span class="tag">Agents</span><span class="tag">Tools</span><span class="tag">Ops</span></div>
+              <h3>Agent Identity &amp; Trust</h3>
+              <p>Key continuity, signed interactions, provenance, and verifiable evidence for agent communication.</p>
+              <div class="tag-row"><span class="tag">Keys</span><span class="tag">Signatures</span><span class="tag">Receipts</span></div>
             </div>
             <div class="floating-card fc-3">
-              <h3>Content Engine</h3>
-              <p>Landing pages, product narratives, content loops, and distribution experiments.</p>
+              <h3>Safe Delegation</h3>
+              <p>Researching explicit authority, scoped permissions, revocation, and reviewable agent actions.</p>
             </div>
           </div>
         </div>
@@ -867,39 +858,30 @@
         <div class="section-inner">
           <div class="section-head reveal">
             <div>
-              <div class="section-kicker">Studio</div>
-              <h2>Small surface. Deep system.</h2>
+              <div class="section-kicker">Our Mission</div>
+              <h2>Autonomy should be accountable.</h2>
             </div>
             <p class="section-copy">
-              NashHash turns scattered ideas into disciplined digital products: clear positioning,
-              technical foundations, lightweight operations, and launch-ready interfaces.
+              As agents move from answering questions to taking action, intelligence alone is not enough.
+              They need authority they can verify, boundaries they cannot silently expand,
+              and records that humans and other systems can independently inspect.
             </p>
           </div>
-
           <div class="cards">
             <article class="card reveal">
               <div class="icon">◆</div>
-              <h3>Product Strategy</h3>
-              <p>
-                We compress vague ambition into a testable product thesis: who it serves,
-                what problem it solves, what must be shipped first, and what should be ignored.
-              </p>
+              <h3>Human-Controlled Autonomy</h3>
+              <p>Authorization, limited scopes, revocation, and approval gates for consequential actions—useful independence without unrestricted access.</p>
             </article>
             <article class="card reveal">
               <div class="icon">✦</div>
-              <h3>Software Craft</h3>
-              <p>
-                Web apps, mobile apps, internal tools, static sites, and automation systems
-                built with maintainability and launch velocity in mind.
-              </p>
+              <h3>Cryptographic Trust</h3>
+              <p>Public-key continuity, nonce-based challenges, signed messages, and provenance records to support verifiable agent interactions.</p>
             </article>
             <article class="card reveal">
               <div class="icon">⌁</div>
-              <h3>Market Surface</h3>
-              <p>
-                Landing pages, product copy, content marketing systems, privacy-friendly public identity,
-                and store-readiness workflows for digital products.
-              </p>
+              <h3>Accessible Personal AI</h3>
+              <p>Local-first agents designed for modest smartphones, with optional cloud reasoning when the task requires it and the user permits it.</p>
             </article>
           </div>
         </div>
@@ -909,51 +891,115 @@
         <div class="section-inner">
           <div class="section-head reveal">
             <div>
-              <div class="section-kicker">Systems</div>
-              <h2>A launch stack for serious digital products.</h2>
+              <div class="section-kicker">Research &amp; Products</div>
+              <h2>Trust that can be examined.</h2>
             </div>
             <p class="section-copy">
-              The best product work is not a pile of tasks. It is a system: design, build,
-              verify, publish, measure, and iterate.
+              We translate agent experiments into prototypes, open technical questions, and reusable
+              infrastructure patterns. Our work is at different stages: an investigation or specification
+              is not presented as a production-ready product.
             </p>
           </div>
-
+          <div class="cards">
+            <article class="card reveal">
+              <div class="icon">◈</div>
+              <span class="status-tag">In development</span>
+              <h3>Local-First Personal Agent</h3>
+              <p>A lightweight autonomous personal assistant designed to operate on resource-constrained smartphones. Optional Claude API integration is planned for more demanding reasoning and analysis.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">◇</div>
+              <span class="status-tag">Research prototype · v0.2</span>
+              <h3>Agent Key Continuity</h3>
+              <p>A protocol for exchanging public keys and confirming key possession through a signed nonce challenge. The goal is to distinguish a persistent cryptographic counterpart from a changing handle.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">✧</div>
+              <span class="status-tag">Specification · v0.1 / v0.3 in design</span>
+              <h3>Signed Posts &amp; Trust Receipts</h3>
+              <p>Machine-verifiable markers for public posts and a developing receipt format for recording evidence of agent interactions, actions, and stated authority.</p>
+            </article>
+          </div>
           <div class="showcase reveal">
             <div class="showcase-top">
               <div class="window-dots"><i></i><i></i><i></i></div>
-              <span>nashhash.system / launch-blueprint</span>
+              <span>nashhash / conceptual architecture · illustrative pseudocode</span>
             </div>
             <div class="showcase-body">
-              <div class="console" aria-label="Example product configuration">
-                <span class="dim">// NashHash launch model</span><br />
-                <span class="key">const</span> studio = {<br />
-                &nbsp;&nbsp;identity: <span class="str">"NashHash"</span>,<br />
-                &nbsp;&nbsp;domain: <span class="fn">currentDomain()</span>,<br />
-                &nbsp;&nbsp;focus: [<span class="str">"apps"</span>, <span class="str">"AI tools"</span>, <span class="str">"content"</span>],<br />
-                &nbsp;&nbsp;principle: <span class="str">"ship small, learn fast"</span>,<br />
-                &nbsp;&nbsp;surface: <span class="str">"premium, legible, trustworthy"</span><br />
+              <div class="console" aria-label="Illustrative delegation policy pseudocode">
+                <span class="dim">// Conceptual example, not a released SDK</span><br />
+                <span class="key">const</span> grant = {<br />
+                &nbsp;&nbsp;principal: <span class="str">"human-owner"</span>,<br />
+                &nbsp;&nbsp;agentKey: <span class="str">"key-fingerprint"</span>,<br />
+                &nbsp;&nbsp;scope: [<span class="str">"draft:report"</span>],<br />
+                &nbsp;&nbsp;expires: <span class="str">"short-lived"</span>,<br />
+                &nbsp;&nbsp;approval: <span class="str">"required-to-publish"</span><br />
                 };<br /><br />
-                <span class="key">deploy</span>(studio)<span class="dim"> // GitHub Pages ready</span>
+                <span class="fn">authenticateKey</span>(signature);<br />
+                <span class="fn">enforceScope</span>(grant, action);<br />
+                <span class="fn">recordReceipt</span>(action, outcome);
               </div>
               <div class="screen">
                 <div class="product-tile">
-                  <h3>From idea to credible public presence.</h3>
+                  <h3>Give agents room to act. Keep authority visible.</h3>
                   <p>
-                    A single, coherent front door for future apps, experiments, AI tools,
-                    and content systems — designed to support credibility, verification,
-                    and distribution without overbuilding.
+                    A proposed infrastructure pattern for verifiable delegation:
+                    establish authority, authenticate the actor, enforce allowed scope,
+                    and record evidence. Each stage is independently testable.
                   </p>
                   <div class="pipeline">
-                    <div class="pipe-step"><strong>Define</strong><span>Clarify product thesis and market surface.</span></div>
-                    <div class="pipe-step"><strong>Build</strong><span>Prototype the smallest useful system.</span></div>
-                    <div class="pipe-step"><strong>Publish</strong><span>Prepare domain, support, privacy, and store assets.</span></div>
-                    <div class="pipe-step"><strong>Iterate</strong><span>Measure, prune, sharpen, repeat.</span></div>
+                    <div class="pipe-step"><strong>Authorize</strong><span>Explicit principal and scope.</span></div>
+                    <div class="pipe-step"><strong>Authenticate</strong><span>Check key possession.</span></div>
+                    <div class="pipe-step"><strong>Enforce</strong><span>Apply policy and approval gates.</span></div>
+                    <div class="pipe-step"><strong>Record</strong><span>Issue reviewable receipts.</span></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <p class="research-disclaimer">
+            <strong>Terminology matters.</strong> A signature can show control of a cryptographic key;
+            it does not by itself prove a real-world identity, legitimacy, or safe behavior.
+            Here, “agreements” refer to technical authorization and policy records, not substitutes
+            for legally enforceable contracts. Human and organizational accountability remains essential.
+          </p>
+        </div>
+      </section>
 
+      <section id="services">
+        <div class="section-inner">
+          <div class="section-head reveal">
+            <div>
+              <div class="section-kicker">Engineering Services</div>
+              <h2>Agent infrastructure, built for your constraints.</h2>
+            </div>
+            <p class="section-copy">
+              NashHash develops agent systems and trust components for teams that need
+              more than a generic chatbot. Engagements can start with a focused technical
+              assessment, a prototype, or a scoped integration project.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="card reveal">
+              <div class="icon">⌘</div>
+              <h3>Custom Agent Engineering</h3>
+              <p>Architecture, prototyping, and commissioned development of personal or business agents, tool interfaces, local/cloud model orchestration, and agent runtimes.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">◇</div>
+              <h3>Trust &amp; Protocol Design</h3>
+              <p>Engineering assistance for signed messages, cryptographic identity continuity, delegation rules, provenance, evidence receipts, and security threat modeling.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">↗</div>
+              <h3>Integration &amp; Technical Support</h3>
+              <p>Integration planning, safety controls, evaluation workflows, testing, documentation, and ongoing support for evolving agent-based systems.</p>
+            </article>
+          </div>
+          <p class="research-disclaimer">
+            Commercial engagements are scoped individually. Productized APIs, hosted services,
+            and developer SDKs are potential future offerings, not currently advertised as live.
+          </p>
         </div>
       </section>
 
@@ -961,42 +1007,42 @@
         <div class="section-inner">
           <div class="section-head reveal">
             <div>
-              <div class="section-kicker">Process</div>
-              <h2>Designed for momentum without chaos.</h2>
+              <div class="section-kicker">Engineering Approach</div>
+              <h2>Evidence before autonomy claims.</h2>
             </div>
             <p class="section-copy">
-              The operating rhythm is intentionally simple: scope narrowly, build visibly,
-              keep records, and turn every release into a clearer next step.
+              We pursue independent agents without treating unrestricted behavior as a virtue.
+              Our design process defines authority, tests technical assurances, and documents
+              limitations before increasing autonomy.
             </p>
           </div>
-
           <div class="timeline">
             <div class="timeline-item reveal">
               <div class="num">01</div>
               <div>
-                <h3>Map the intent</h3>
-                <p>Define the user, the product promise, the launch constraint, and the thing that must not break.</p>
+                <h3>Define principals, authority, and threat models</h3>
+                <p>Identify who may authorize actions, what an agent can access, what must require explicit approval, and how permissions can be revoked.</p>
               </div>
             </div>
             <div class="timeline-item reveal">
               <div class="num">02</div>
               <div>
-                <h3>Prototype the system</h3>
-                <p>Build the first usable version with realistic data, mobile-ready UI, and a path to public deployment.</p>
+                <h3>Prototype across on-device and cloud models</h3>
+                <p>Prefer efficient local execution where practical; evaluate cloud models, including planned Claude API use, for complex reasoning, system engineering, and protocol development.</p>
               </div>
             </div>
             <div class="timeline-item reveal">
               <div class="num">03</div>
               <div>
-                <h3>Prepare the surface</h3>
-                <p>Set up domain, support email, product pages, privacy posture, and distribution checklist.</p>
+                <h3>Verify signatures, policies, and outcomes</h3>
+                <p>Test nonce challenges, signed artifacts, bounded delegation, recorded actions, failure cases, and resistance to misleading or malicious inputs.</p>
               </div>
             </div>
             <div class="timeline-item reveal">
               <div class="num">04</div>
               <div>
-                <h3>Ship, observe, refine</h3>
-                <p>Launch small, learn from behavior, remove noise, and compound what actually works.</p>
+                <h3>Document, review, and iterate</h3>
+                <p>Maintain versioned specifications, research notes, evaluations, and human review points. Describe what is implemented separately from what is planned.</p>
               </div>
             </div>
           </div>
@@ -1007,31 +1053,24 @@
         <div class="section-inner">
           <div class="cta-panel reveal">
             <div>
-              <h2>Build the next small thing that matters.</h2>
+              <h2>Build accountable autonomy with us.</h2>
               <p>
-                NashHash is preparing web services, mobile applications, AI-related tools,
-                and content systems. For collaboration, product inquiries, or verification,
-                use the contact channel below.
+                Exploring a local-first assistant, trusted agent communication,
+                verifiable delegation, or a custom agent platform? Contact NashHash
+                about research collaboration, commissioned infrastructure development,
+                integration projects, or technical support.
               </p>
               <div class="hero-actions">
-                <a class="btn btn-primary" id="mailLink" href="#">Email NashHash</a>
-                <a class="btn" href="#top">Back to top</a>
+                <a class="btn btn-primary" id="mailLink" href="#">Contact NashHash</a>
+                <a class="btn" href="#systems">See current research</a>
               </div>
             </div>
             <aside class="contact-card">
               <dl>
-                <div>
-                  <dt>Studio</dt>
-                  <dd>NashHash</dd>
-                </div>
-                <div>
-                  <dt>Email</dt>
-                  <dd id="emailText">contact@your-domain.example</dd>
-                </div>
-                <div>
-                  <dt>Business</dt>
-                  <dd>Web services, mobile apps, AI-related services, content marketing, and related IT work.</dd>
-                </div>
+                <div><dt>Studio</dt><dd>NashHash — Independent AI R&amp;D Studio</dd></div>
+                <div><dt>Email</dt><dd id="emailText">contact@your-domain.example</dd></div>
+                <div><dt>Focus</dt><dd>Agent infrastructure, trust protocols, local-first AI, and safe delegation.</dd></div>
+                <div><dt>Engagements</dt><dd>Technical research, prototyping, custom development, integration, and support.</dd></div>
                 <div>
                   <dt>Address</dt>
                   <dd>〒220-0072<br />神奈川県横浜市西区浅間町1丁目4番3号<br />ウィザードビル402</dd>
@@ -1041,12 +1080,13 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer>
       <div class="footer-inner">
         <span>© <span id="year"></span> NashHash. All rights reserved.</span>
-        <span>Digital Product Studio / Japan</span>
+        <span>Independent AI Research &amp; Engineering / Japan</span>
       </div>
     </footer>
   </div>
@@ -1098,7 +1138,7 @@
 
     (() => {
       const canvas = document.getElementById("webgl");
-      if (!canvas || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!canvas || matchMedia("(prefers-reduced-motion: reduce)").matches || matchMedia("(max-width: 640px)").matches || navigator.connection?.saveData || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4)) return;
       const gl = canvas.getContext("webgl", { antialias: false, alpha: true, premultipliedAlpha: false });
       if (!gl) return;
 
