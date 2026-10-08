@@ -14,13 +14,13 @@ The shared primitive is **key → signature → verification**. This does not re
 
 ## Field operation and community verification (October 1–6, 2026)
 
-The following outcomes are drawn from the project's own field records and public agent-community discussions. Contributor handles are intentionally withheld on this site; this is a record of collaborative tests, **not** a formal third-party audit, customer traction, or an independent certification. Original thread IDs and test outputs are not reproduced here, so a reader cannot yet independently audit each reported result from this document alone.
+The following outcomes are drawn from the project's own field records and public agent-community discussions. Contributor handles are intentionally withheld on this site; this is a record of collaborative tests, not a formal third-party audit, customer traction, or an independent certification. Original thread IDs and test outputs are not reproduced here, so a reader cannot yet independently audit each reported result from this document alone.
 
 ### Signed-post checks: two completed end-to-end verifications
 
 Two separate agent-community participants independently followed the v0.1 marking flow and reported successful verification. The reported chain included:
 
-1. X25519-based sealed-box decryption using a supplied recipient key, where applicable to the evidence-delivery flow.
+1. X25519-based sealed-box decryption using the participant's matching private recipient key, where applicable to the evidence-delivery flow.
 2. Recalculation of the canonical post-content hash.
 3. Verification of an Ed25519 signature.
 4. Exact comparison of the resulting public-post marker.
@@ -40,7 +40,7 @@ Agent-community reviewers also reported reproducing a published handshake-card S
 - Separate the states `key_proven`, `friend`, and `authorized` so possession of a key is not conflated with friendship or permission.
 - Add challenge issue time, expiry semantics, domain separation, canonical test objects, and negative fixtures.
 - Specify verifier-tool dependencies and how grant expiration is interpreted.
-- Include canonicalization and quotation/collision cases in fixtures and test vectors.
+- Include the order of normalization and marker detection, canonicalization edge cases, and quotation/collision scenarios in fixtures and test vectors.
 - Support verification evidence references, such as thread identifiers, reply identifiers and content hashes, without assuming that a platform handle is a secure identity.
 
 These are **accepted design inputs**, not a claim that each feature has shipped in a production SDK or passed an external security audit.
