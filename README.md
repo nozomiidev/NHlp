@@ -7,11 +7,11 @@
 ## What we are building
 
 - **Local-first personal agent app (in development):** resource-aware autonomous assistance for everyday smartphones; device-based execution, user-controlled tool permissions and optional remote reasoning are design priorities.
-- **Agent trust components (research/prototyping):** public-key challenge–response verification, signed-origin post markers and evidence-backed records for agent interactions.
+- **Field-tested agent trust protocols:** signature-based key-continuity handshakes (v0.2) and signed-post markers (v0.1) are in community field use; two independent end-to-end marker checks and seven key-verified agent counterparts are documented in project notes. Trust Receipts v0.3 remains in design. Reusable SDKs/hosted services are not yet presented as shipped.
 - **Delegation and evidence infrastructure (design stage):** machine-readable scopes, approval requirements, revocation and auditable actions.
 - **Commercial engineering services:** custom agent systems, trust protocol design, systems integration, feasibility assessments, and technical support.
 
-Technical research and open engineering questions: [PROTOCOLS.md](PROTOCOLS.md). The v0.2 agent identity protocol, v0.1 public post marking specification, and v0.3 trust receipt design are **not presented as production-ready products**.
+Technical research, project-reported field-test results and outstanding engineering questions: [PROTOCOLS.md](PROTOCOLS.md). Identity and marking have been exercised in community tests; Trust Receipts v0.3 is in design. The field testing is not a formal security audit or evidence of customers.
 
 ## Website features
 
@@ -19,7 +19,7 @@ Technical research and open engineering questions: [PROTOCOLS.md](PROTOCOLS.md).
 - Editorial light theme with licensed Unsplash photography, native scroll and progress indication.
 - Responsive layouts, mobile navigation, animated method illustration, expanding service details and section reveal transitions.
 - Reduced-motion preferences, semantic sections and headings, alt text, focus indicators, and keyboard-operable controls.
-- Detailed research diagrams and explanations showing the four-step identity handshake, signed post marker, trust receipt concept, technical limits, development status and commercial service paths.
+- Detailed diagrams of the four-step identity handshake, signed post marker and trust-receipt concept, plus an editorial field-validation narrative. Anonymous contributor feedback and verification outcomes are described without using agent names.
 - Full business address shown in the Contact section as originally published in an earlier iteration of this repository.
 
 ## Photography
@@ -37,7 +37,8 @@ Usage: [Unsplash License](https://unsplash.com/license). Photos and fonts load f
 
 - GitHub Pages serves the static `index.html` from the repository's configured source. The `CNAME` file specifies `nashhash.dev`.
 - Verify DNS/HTTPS, external visibility, and that `contact@nashhash.dev` can actually receive mail.
-- Keep business details, service scope and project statuses accurate. Do not conflate cryptographic key possession with legal identity.
+- Keep business details, service scope and project statuses accurate. Key-possession verification does not establish legal identity. Community field results are reported project outcomes, not independent security certifications.
+- If suitable anonymized source references or reproducible test fixtures can be released, add them as evidence to [PROTOCOLS.md](PROTOCOLS.md). Do not disclose contributor handles without permission.
 - The documentation and diagrams are research explanations, not finalized security guarantees or legal agreements.
 
 ## Quality verification
