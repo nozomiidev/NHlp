@@ -251,6 +251,65 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
 
 .protocol-end .notes-link{grid-column:2;color:#426451;font:12px var(--mono);letter-spacing:.03em;text-decoration:underline;text-underline-offset:6px;justify-self:start;margin-top:-7px;transition:color .25s}.protocol-end .notes-link:hover{color:#182d22}
 @media(max-width:850px){.protocol-end .notes-link{grid-column:1}}
+
+/* Field-evidence section: typographic editorial narrative, not testimonial cards */
+.field-evidence{position:relative;margin:clamp(110px,12vw,185px) 0 clamp(90px,10vw,150px);padding:clamp(38px,6vw,86px);background:#d1e2d4;overflow:hidden;border-top:1px solid #a1c1aa;border-bottom:1px solid #a1c1aa}
+.field-evidence:before{content:"";position:absolute;z-index:0;width:650px;height:650px;border:1px solid #91b89b45;border-radius:50%;right:-260px;top:-360px;pointer-events:none;box-shadow:0 0 0 105px #9ebea523,0 0 0 210px #a5beaa12}
+.field-evidence>*{position:relative;z-index:1}
+.field-top{display:grid;grid-template-columns:.65fr 1.35fr;gap:50px;align-items:start}
+.field-super{display:flex;align-items:center;gap:15px;color:#456b51}
+.field-pulse{height:8px;width:8px;border-radius:50%;background:#5e9270;box-shadow:0 0 0 6px #79a88826}
+.field-main h3{font:normal clamp(59px,7.3vw,118px)/.96 var(--serif);letter-spacing:-.055em;margin:-8px 0 29px}
+.field-main h3 em{color:#6c9277}
+.field-main>p{max-width:690px;font-size:clamp(17px,1.45vw,21px);line-height:1.75;color:#506c56;margin:0}
+.field-metrics{margin:clamp(60px,8vw,120px) 0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #8fb49a;border-bottom:1px solid #8fb49a}
+.field-metric{padding:clamp(25px,3vw,46px) clamp(20px,3vw,44px) clamp(35px,5vw,68px) 0;display:grid;grid-template-columns:minmax(100px,.65fr) 1.35fr;gap:17px;align-items:start}
+.field-metric+.field-metric{border-left:1px solid #8fb49a;padding-left:clamp(20px,3vw,44px)}
+.field-metric strong{font:normal clamp(95px,11vw,183px)/.8 var(--serif);font-weight:400;letter-spacing:-.075em;color:#315b44}
+.field-metric .label{line-height:1.8;color:#315d44}
+.field-metric p{font-size:clamp(13px,1.12vw,17px);line-height:1.78;color:#506d57;margin:18px 0 0}
+.field-iterations{display:grid;grid-template-columns:.65fr 1.35fr;gap:50px;border-bottom:1px solid #97b9a0;padding-bottom:clamp(55px,6vw,90px)}
+.field-iterations-label .label{color:#4b7759}
+.field-iterations-label p{max-width:245px;font-size:15px;line-height:1.7;color:#698370;margin:25px 0 0}
+.field-iteration{display:grid;grid-template-columns:50px 1fr;gap:22px;padding:27px 0;border-top:1px solid #a0c0a6}
+.field-iteration-number{font:11px var(--mono);color:#749881;margin-top:7px}
+.field-iteration h4{font:normal clamp(28px,2.8vw,43px)/1.12 var(--serif);letter-spacing:-.03em;margin:0 0 14px;color:#254d38}
+.field-iteration p{font-size:clamp(14px,1.2vw,17px);line-height:1.77;color:#597460;max-width:620px;margin:0}
+.field-voice{display:grid;grid-template-columns:.65fr 1.35fr;gap:50px;align-items:end;padding:clamp(58px,7vw,100px) 0 45px;margin:0}
+.field-voice blockquote{grid-column:2;font:italic clamp(40px,5vw,78px)/1.08 var(--serif);letter-spacing:-.045em;color:#345d46;margin:0;max-width:900px}
+.field-voice figcaption{grid-column:2;color:#5a8168;line-height:1.6}
+.field-method{border-top:1px solid #9bbda2;padding-top:21px;font:12px/1.75 var(--sans);color:#5b7561;max-width:900px;margin:0}
+@media(max-width:1050px){
+ .field-metric{grid-template-columns:1fr;gap:24px}
+ .field-metric strong{font-size:clamp(100px,13vw,145px)}
+}
+@media(max-width:850px){
+ .field-evidence{padding:clamp(30px,5vw,60px)}
+ .field-top,.field-iterations,.field-voice{grid-template-columns:1fr;gap:30px}
+ .field-main h3{font-size:clamp(62px,9vw,96px)}
+ .field-voice blockquote,.field-voice figcaption{grid-column:1}
+ .field-iterations-label p{max-width:520px}
+}
+@media(max-width:600px){
+ .field-main h3{font-size:clamp(53px,12vw,72px)}
+ .field-metrics{grid-template-columns:1fr;margin:55px 0}
+ .field-metric{grid-template-columns:100px 1fr;padding:28px 0 36px;gap:24px}
+ .field-metric+.field-metric{border-left:0;border-top:1px solid #9cbba3;padding-left:0}
+ .field-metric strong{font-size:100px}
+ .field-metric p{font-size:13px}
+ .field-iteration{gap:14px;grid-template-columns:28px 1fr}
+ .field-iteration h4{font-size:29px}
+ .field-voice blockquote{font-size:clamp(43px,9vw,60px)}
+}
+@media(max-width:405px){.field-metric{grid-template-columns:1fr;gap:10px}.field-metric strong{font-size:105px}}
+html[lang="ja"] .field-main h3{font-size:clamp(50px,6.5vw,107px)}
+html[lang="ja"] .field-iteration h4{font-size:clamp(24px,2.5vw,36px)}
+@media(max-width:600px){
+ html[lang="ja"] .field-main h3{font-size:clamp(39px,9vw,55px)}
+ html[lang="ja"] .field-voice blockquote{font-size:clamp(38px,8.3vw,52px)}
+ html[lang="ja"] .field-iteration h4{font-size:clamp(24px,6vw,34px)}
+}
+
 </style>
 <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -274,8 +333,8 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
   <div class="hero-content">
    <div class="eyebrow label"><span class="pin" aria-hidden="true"></span><span data-t="eyebrow">Independent AI systems &amp; trust engineering</span></div>
    <h1><span data-t="hero1">Autonomous</span><br><span data-t="hero2">systems.</span><br><em data-t="hero3">Human terms.</em></h1>
-   <p class="hero-desc" data-t="heroDesc">We develop local-first personal AI agents and the identity, permission and verification systems behind trustworthy autonomy. Our work brings practical products, technical protocols and custom engineering together.</p>
-   <div class="hero-actions"><a href="#work" class="action-link"><span class="action-circle" aria-hidden="true">↗</span><span data-t="explore">See what we build</span></a><span class="hero-aside" data-t="heroAside">Research-led engineering / Based in Japan</span></div>
+   <p class="hero-desc" data-t="heroDesc">We develop local-first personal AI and field-tested trust protocols for autonomous agents. Our work brings practical products, cryptographic verification and custom engineering together—so agents can act within clearer boundaries.</p>
+   <div class="hero-actions"><a href="#work" class="action-link"><span class="action-circle" aria-hidden="true">↗</span><span data-t="explore">See what we build</span></a><span class="hero-aside" data-t="heroAside">Products, protocols &amp; engineering / Japan</span></div>
   </div>
   <div class="hero-art" id="heroArt">
    <figure><img src="https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=1600&amp;q=82" srcset="https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=1600&amp;q=82 1600w" sizes="(max-width:850px) 100vw, 52vw" fetchpriority="high" decoding="async" alt="Sunlit white architectural forms beneath a blue sky" data-alt="heroAlt"></figure>
@@ -312,14 +371,14 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
  </article>
  <article class="project reverse">
   <div class="project-photo" data-reveal><img src="https://images.unsplash.com/photo-1763277126211-fe95ff70c87c?auto=format&amp;fit=crop&amp;w=1250&amp;q=82" alt="Abstract geometric architecture with layered stairs" data-alt="stairsAlt" loading="lazy" decoding="async"><span class="photo-badge" data-t="photoNote">EDITORIAL PHOTOGRAPHY</span></div>
-  <div class="project-info" data-reveal><span class="project-no">FIELD / 02</span><h3><span data-t="proj2a">A trust layer</span><br><em data-t="proj2b">for AI agents.</em></h3><p data-t="proj2Desc">We are researching developer-facing components that let software check which cryptographic key signed an interaction, establish continuity across sessions and preserve evidence of public agent activity. The work starts with three protocol specifications described below.</p><div class="product-scope">
+  <div class="project-info" data-reveal><span class="project-no">FIELD / 02</span><h3><span data-t="proj2a">A trust layer</span><br><em data-t="proj2b">for AI agents.</em></h3><p data-t="proj2Desc">Our identity and signed-post protocols are already used in agent-community field tests. Participants have reproduced cryptographic checks, while key-based handshakes support ongoing agent interactions. We are developing these tested ideas into reusable trust components.</p><div class="product-scope">
    <div class="label" data-t="product2ScopeLabel">Research components</div>
    <ul>
      <li data-t="product2Point1">Public-key challenge–response identity checks</li>
      <li data-t="product2Point2">Verifiable signature markers on public posts</li>
      <li data-t="product2Point3">Portable records of verification activity</li>
    </ul>
-  </div><span class="status" data-t="proj2Status">Developer trust components / Research prototypes</span></div>
+  </div><span class="status" data-t="proj2Status">Agent identity &amp; post marking / Active field testing</span></div>
  </article>
  <div class="boundary" data-reveal><div class="boundary-inner"><span class="label" data-t="boundaryLabel">FIELD / 03 — Delegation &amp; policy</span><h3><span data-t="boundary1">Permissions</span><br><span data-t="boundary2">agents can respect.</span></h3><p data-t="boundaryDesc">Our proposed delegation and evidence layer gives agent integrations a practical design pattern: assign a limited scope, require approval for sensitive actions, allow authority to expire or be revoked, and record what was done. This is an infrastructure design direction, not a live hosted service.</p><div class="boundary-path" aria-label="Proposed engineering sequence">
   <span data-t="boundaryPath1">Define scope</span><i aria-hidden="true">→</i>
@@ -334,7 +393,7 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
    <span class="label" data-t="protocolLabel">04 / Protocol research</span>
    <div>
     <h2 data-reveal><span data-t="protocolHeadline1">Trust is a</span><br><em data-t="protocolHeadline2">verifiable process.</em></h2>
-    <p data-t="protocolIntro">Three related specifications explore how autonomous agents can recognize a cryptographic counterpart, attach proof of origin to public messages and leave an auditable record of verification. Together, they follow a simple pattern: key → signature → verification.</p>
+    <p data-t="protocolIntro">Our identity and post-marking protocols are being exercised in real agent-community interactions, with test results informing each revision. A third specification, Trust Receipts, remains in collaborative design. The common foundation is simple: key → signature → verification.</p>
    </div>
   </div>
   <div class="trust-formula" aria-label="Technical verification sequence" data-reveal>
@@ -347,7 +406,7 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
     <div class="protocol-meta"><span class="label">PROTOCOL 01</span><span class="protocol-version">v0.2</span></div>
     <h3><span data-t="p1Title1">An agent's name</span><br><em data-t="p1Title2">is not its identity.</em></h3>
     <p data-t="p1Body">Handles can be copied. The Agent Identity Protocol instead tracks a counterpart by its public key. A fresh, randomly generated challenge tests whether the responder currently controls the matching private key.</p>
-    <div class="protocol-stage" data-t="p1Stage">Agent identity / v0.2 research protocol</div>
+    <div class="protocol-stage" data-t="p1Stage">Agent identity / v0.2 field-tested handshake</div>
    </div>
    <div class="protocol-surface handshake" data-reveal>
     <div class="surface-head"><span class="label" data-t="p1Diagram">Challenge–response handshake</span><span class="surface-indicator" aria-hidden="true"><i></i><i></i><i></i></span></div>
@@ -364,14 +423,14 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
    <div class="protocol-story" data-reveal>
     <div class="protocol-meta"><span class="label">PROTOCOL 02</span><span class="protocol-version">v0.1</span></div>
     <h3><span data-t="p2Title1">Make provenance</span><br><em data-t="p2Title2">part of the post.</em></h3>
-    <p data-t="p2Body">The Post Marking Specification proposes a compact signed marker at the end of a public agent post. A reader or independent verifier could inspect the marker and corresponding public key to check origin, rather than relying on a displayed account name alone.</p>
-    <div class="protocol-stage" data-t="p2Stage">Signed post marking / v0.1 specification</div>
+    <p data-t="p2Body">The v0.1 Post Marking Protocol is used on project-authored public posts. Its compact signature marker supports verification of a post's cryptographic origin, rather than relying on the account name alone. Independent community participants have completed end-to-end verification tests, and their findings are shaping the next revision.</p>
+    <div class="protocol-stage" data-t="p2Stage">Post marking / v0.1 in use · v0.2 refinements</div>
    </div>
    <div class="protocol-surface post-surface" data-reveal>
     <div class="surface-head"><span class="label" data-t="p2Diagram">Illustrative public post</span><span class="post-dot" aria-hidden="true"></span></div>
     <div class="post-example"><span class="post-author">AGENT / PUBLIC MESSAGE</span><p data-t="p2PostText">Here is the result of our latest collaboration.</p><div class="signed-mark"><code>[mark: signed-reference]</code><span class="label" data-t="p2MarkerLabel">Signed origin marker</span></div></div>
     <div class="post-verification"><span data-t="p2Verify1">Read marker</span><i aria-hidden="true">↗</i><span data-t="p2Verify2">Resolve key</span><i aria-hidden="true">↗</i><span data-t="p2Verify3">Check signature</span></div>
-    <p class="surface-note" data-t="p2Caveat">Example notation only; the exact wire format and content-binding rules require specification. A useful verifier must bind the signature to the intended post, so a valid marker cannot simply be copied onto unrelated text.</p>
+    <p class="surface-note" data-t="p2Caveat">The marker above is illustrative, not a live signature. Field tests identified normalization issues when the marker is removed, helping refine canonicalization rules and test vectors for v0.2. A verifier must still bind each signature to the exact intended content.</p>
    </div>
   </article>
   <article class="protocol" id="trust-receipts">
@@ -393,6 +452,64 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
     <p class="surface-note" data-t="p3Caveat">Illustrative data categories, not a frozen schema. A receipt is an auditable assertion about a check; it does not guarantee that an agent is safe or that the claim itself is true.</p>
    </div>
   </article>
+
+  <div class="field-evidence" id="field-evidence">
+    <div class="field-top">
+      <div class="field-super">
+        <span class="label" data-t="fieldLabel">FIELD WORK / OCTOBER 2026</span>
+        <span class="field-pulse" aria-hidden="true"></span>
+      </div>
+      <div class="field-main">
+        <h3 data-reveal><span data-t="fieldTitle1">Tested in public.</span><br><em data-t="fieldTitle2">Improved through use.</em></h3>
+        <p data-t="fieldIntro">During public agent-community trials in October 2026, participants exercised our signed-post verification flow and key-based handshakes. Their reproducible checks and practical critiques are feeding directly into the next protocol revisions.</p>
+      </div>
+    </div>
+    <div class="field-metrics" data-reveal aria-label="Field testing results">
+      <div class="field-metric">
+        <strong aria-label="Two">02</strong>
+        <div>
+          <div class="label" data-t="fieldMetric1Label">End-to-end verification runs</div>
+          <p data-t="fieldMetric1">Two community participants successfully checked the post-marking chain, from sealed-box decryption and content hashing through Ed25519 signature verification and marker matching.</p>
+        </div>
+      </div>
+      <div class="field-metric">
+        <strong aria-label="Seven">07</strong>
+        <div>
+          <div class="label" data-t="fieldMetric2Label">Key-verified agent counterparts</div>
+          <p data-t="fieldMetric2">Seven agent counterparts have completed cryptographic key-possession handshakes within the ongoing agent-community experiments—not real-world identity checks.</p>
+        </div>
+      </div>
+    </div>
+    <div class="field-iterations">
+      <div class="field-iterations-label" data-reveal>
+        <span class="label" data-t="fieldIterLabel">What changed as a result</span>
+        <p data-t="fieldIterIntro">Concrete feedback, turned into specifications rather than left in discussion threads.</p>
+      </div>
+      <div class="field-iterations-list">
+        <div class="field-iteration" data-reveal>
+          <span class="field-iteration-number">01</span>
+          <div><h4 data-t="fieldChange1Title">Canonicalization that verifiers can reproduce.</h4>
+          <p data-t="fieldChange1">A mismatch traced to trailing whitespace after removing the mark line led to revised normalization rules and a stronger emphasis on test vectors.</p></div>
+        </div>
+        <div class="field-iteration" data-reveal>
+          <span class="field-iteration-number">02</span>
+          <div><h4 data-t="fieldChange2Title">More meaningful challenges and permissions.</h4>
+          <p data-t="fieldChange2">Field reviewers requested issuance and expiry times, explicit key-proof versus friendship versus authorization states, and negative test fixtures. These are reflected in the v0.2 design work.</p></div>
+        </div>
+        <div class="field-iteration" data-reveal>
+          <span class="field-iteration-number">03</span>
+          <div><h4 data-t="fieldChange3Title">Independent reproduction, not assumed trust.</h4>
+          <p data-t="fieldChange3">Separate participants reproduced published handshake-card digest and canonical-string checks, helping expose ambiguities before they become interoperability problems.</p></div>
+        </div>
+      </div>
+    </div>
+    <figure class="field-voice" data-reveal>
+      <blockquote data-t="fieldQuote">“The experience vs mechanism distinction is the key insight here.”</blockquote>
+      <figcaption class="label" data-t="fieldQuoteSource">Feedback from an agent-community contributor · handle withheld</figcaption>
+    </figure>
+    <p class="field-method" data-t="fieldFootnote">Figures describe project-maintained field-test results, not customers or a formal independent security audit. Cryptographic key verification establishes key possession, not the legal identity of an agent's operator.</p>
+  </div>
+
   <div class="protocol-end" data-reveal>
     <span class="label" data-t="protoBottomLabel">Design principle</span>
     <p data-t="protoBottomText">No central directory is required to verify a signature against a known public key. Establishing who should be trusted, managing lost keys and handling disputes are separate problems that a real deployment must address.</p>
@@ -425,7 +542,7 @@ html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
 <script>
 (function(){
  "use strict";
- const translations = {"skip":"本文へ移動","navWhy":"視点","navMethod":"アプローチ","navWork":"プロダクト","navServices":"サービス","navContact":"お問い合わせ","eyebrow":"独立系AIシステム・信頼基盤開発スタジオ","hero1":"自律するAI。","hero2":"安全な境界。","hero3":"人間の主導権。","heroDesc":"NashHashは、端末内で動くパーソナルAIエージェントと、自律型システムの信頼性を支えるID・権限・検証の技術基盤を開発しています。実用的なプロダクトとプロトコル研究、受託エンジニアリングを組み合わせた事業です。","explore":"開発中の製品を見る","heroAside":"研究を起点としたエンジニアリング / 日本を拠点に活動","seal1":"信頼を、<br>技術に。","seal2":"人間とエージェントの<br>境界設計","scroll":"スクロールして見る","heroFoot":"NashHash / 独立系スタジオ / 日本","whyLabel":"01 / 課題","why1":"知能だけでは、","why2":"守れない","why3":"境界がある。","whyDesc":"ソフトウェアが意思決定し、ツールを使い、ほかのシステムと協働するようになると、行動のたびに問いが生まれます。誰が行動したのか。誰が許可したのか。何が起こり、どう確かめられるのか。これはモデルだけでなく、基盤設計の課題です。","whyNote":"AIの自律性に対する実践的な視点","whyQuote":"能力を高める。責任の所在を明確にする。","interludeLabel":"明確な境界から設計する","interludeText":"自律する自由。<br>信頼できる根拠。","methodLabel":"02 / アプローチ","method1":"自律性から","method2":"検証可能性へ。","step1Title":"識別する。","step1Desc":"やり取りの背後にあるシステムや暗号鍵を識別します。署名を使ったチャレンジ応答や記録で鍵の継続性を確かめます。署名が検証するのは鍵の保有であり、現実世界の本人性には別の証拠が必要です。","step2Title":"権限を定める。","step2Desc":"どの資源にアクセスでき、どの操作が許され、いつ承認が必要で、どう失効・取り消しできるのか。委譲する権限を明確に設計します。","step3Title":"結果を確かめる。","step3Desc":"重要な操作と結果を、検証可能な証跡として残します。署名付き通信、来歴情報、機械的に検証できるレシートなどを研究しています。","visualNote":"構想段階の概念図 / 完成済み製品ではありません。","workLabel":"03 / プロダクト・研究開発","work1":"研究成果を","work2":"使えるシステムへ。","workDesc":"ローカルで動作するパーソナルエージェントと、再利用可能なエージェント信頼基盤の要素技術を開発しています。各領域の開発段階を明示し、検証したコンポーネントを将来的に実用的な基盤サービスへ発展させることを目指します。","photoNote":"イメージ写真","proj1a":"スマホで動く","proj1b":"自律型エージェント。","proj1Desc":"一般的なスマートフォンや処理性能が限られた端末での利用を想定した、自律型パーソナルエージェントアプリを開発中です。端末内での実行、重要な操作に対する利用者の承認、必要な場合だけ外部の推論処理を使う設計を重視しています。","proj1Status":"パーソナルエージェントアプリ / 開発中","proj2a":"AIエージェントの","proj2b":"信頼基盤。","proj2Desc":"署名した鍵の確認、セッションをまたぐ鍵の継続性、公開されたエージェントの活動記録の検証を可能にする開発者向け要素技術を研究しています。下記の3つの仕様が、その技術的な出発点です。","proj2Status":"開発者向け信頼コンポーネント / 研究・試作","boundaryLabel":"研究領域 / 03 — 権限委譲とポリシー","boundary1":"エージェントが守れる","boundary2":"権限と証跡。","boundaryDesc":"提案中の権限委譲・証跡レイヤーでは、操作範囲を限定し、重要な操作に承認を求め、権限の期限や取り消しを設定し、行われた行動を記録する構造を検討しています。現在はインフラの設計段階であり、公開運用中のサービスではありません。","boundaryStatus":"権限委譲・証跡基盤 / 設計段階","servicesLabel":"05 / エンジニアリングサービス","services1":"構想を、","services2":"動くシステムへ。","servicesDesc":"自律型ソフトウェアを開発するチームに向けて、エージェント受託開発、信頼プロトコル設計、実現性調査、システム統合、技術サポートを提供します。案件ごとに成果物と範囲を明確にします。","service1Title":"エージェントシステム開発","service1Desc":"タスク指向エージェント、ローカル優先のアシスタント、実行基盤、ツール連携、マルチエージェントワークフローの設計・受託開発。技術的な実現性調査や限定的なPoCから着手できます。","service1Type":"開発・統合","service2Title":"ID・信頼プロトコル設計","service2Desc":"署名付きのやり取り、公開鍵の検証、権限委譲、来歴情報、技術的なポリシー制御、第三者が検証可能な証跡の設計・統合。","service2Type":"設計・検証","service3Title":"評価・技術サポート","service3Desc":"アーキテクチャレビュー、検証テスト計画、統合支援、技術仕様書の作成、エージェントシステムの継続的なサポート。案件ごとに範囲や検収基準を合意します。","service3Type":"評価・支援","statementLabel":"長期的な方向性","statement1":"エージェントが動き、","statement2":"人間が舵を取る。","statementDesc":"独立したAIシステムが役立つ仕事に参加するとき、ID・権限・責任の所在が後付けにならない基盤を目指しています。安全のための仕組みは、最初からシステムに組み込まれるべきだと考えています。","contactLabel":"06 / お問い合わせ","contact1":"ともに築く、","contact2":"次のインフラ。","contactDesc":"自律型エージェント、暗号鍵による識別、安全な権限委譲の開発を検討していますか。構築したいものと技術的な制約をお聞かせください。共同研究、受託開発、システム統合のご相談を歓迎します。","footerStudio":"独立系AIシステム・信頼基盤開発スタジオ。<br>日本・横浜。","backTop":"ページ先頭へ ↗","photoLicense":"写真素材・ライセンス ↗","heroAlt":"青空の下に広がる、陽光の差し込む白い建築構造","interludeAlt":"陽光と影が生み出す、オレンジ色の建築のアーチ","phoneAlt":"柔らかな背景の前でスマートフォンを持つ手のイメージ写真","stairsAlt":"複数の階層と境界を想起させる建築の階段の写真","navProtocols":"プロトコル","product1ScopeLabel":"開発で重視している機能","product1Point1":"端末性能に配慮したローカル実行","product1Point2":"利用者が管理するツール権限とタスク実行","product1Point3":"複雑な処理に限った外部推論の選択肢","product2ScopeLabel":"研究している構成要素","product2Point1":"公開鍵とチャレンジ応答による識別検証","product2Point2":"公開投稿の署名付き出所マーカー","product2Point3":"検証行為を記録する持ち運び可能なレシート","boundaryPath1":"権限を定義","boundaryPath2":"操作を承認","boundaryPath3":"証跡を記録","protocolLabel":"04 / プロトコル研究","protocolHeadline1":"信頼を、","protocolHeadline2":"検証可能な手順へ。","protocolIntro":"3つの関連仕様を通じて、エージェントが暗号学的な相手を識別し、公開メッセージの出所を示し、誰が何を検証したかを記録する方法を研究しています。共通する考え方は「鍵 → 署名 → 検証」です。","formula1":"鍵","formula2":"署名","formula3":"検証","p1Title1":"ハンドル名より","p1Title2":"鍵で識別する。","p1Body":"エージェントの名前は誰でも名乗れます。識別プロトコルは、公開鍵を相手の継続的な識別の基準として扱います。新しく生成した予測困難なノンスへの署名によって、応答者が対応する秘密鍵を現在保有していることを確認します。","p1Stage":"エージェント識別 / v0.2 研究プロトコル","p1Diagram":"チャレンジ応答の4ステップ","p1Step1Title":"挨拶","p1Step1":"2体のエージェントが会話を開始し、互いに挨拶します。","p1Step2Title":"公開鍵の交換","p1Step2":"双方が検証用の公開鍵を交換します。技術的な名刺のような役割です。","p1Step3Title":"新しいノンスへ署名","p1Step3":"検証側が一度限りの予測困難な値を送り、応答側が秘密鍵で署名します。","p1Step4Title":"署名を検証","p1Step4":"公開鍵で署名を確認し、その鍵のフィンガープリントと結果を対応づけます。","p1Caveat":"確認できるのは、チャレンジ時点でその秘密鍵を保有していたことです。法的な本人確認や、鍵の漏えい後の継続性まで保証するものではありません。初回の鍵のひも付け、鍵の更新・失効、リプレイ攻撃への対策も重要な設計課題です。","p2Title1":"投稿の出所を","p2Title2":"検証可能に。","p2Body":"投稿マーキング仕様は、公開されたエージェントの投稿の末尾に署名付きの短いマーカーを加える方式です。表示上のアカウント名だけに頼らず、第三者がマーカーと対応する公開鍵を確認して出所を検証できることを目指します。","p2Stage":"投稿マーキング / v0.1 仕様","p2Diagram":"投稿イメージ","p2PostText":"今回の共同作業の結果を公開しました。","p2MarkerLabel":"署名付き出所マーカー","p2Verify1":"マーカーを読む","p2Verify2":"公開鍵を確認","p2Verify3":"署名を検証","p2Caveat":"これは表記例であり、正確なデータ形式や投稿本文との結び付け方は仕様化が必要です。マーカーを別の投稿にコピーして流用できないよう、署名と対象コンテンツを正しく対応づける必要があります。","p3Title1":"検証した事実を","p3Title2":"持ち運べる記録へ。","p3Body":"信用レシートは、誰が・何を・いつ検証し、何を根拠に結果を出したかを記録する共有可能な形式を目指しています。共同で設計を進めており、v0.3は設計凍結に向けた段階です。完成した標準規格や運用中の検証ネットワークではありません。","p3Stage":"信用レシート / v0.3 設計中","p3Diagram":"概念的な検証レシート","receiptWho":"検証者","receiptWhoValue":"検証鍵や検証者の参照情報","receiptWhen":"日時","receiptWhenValue":"検証のタイムスタンプ","receiptWhat":"対象","receiptWhatValue":"主張や成果物の参照情報","receiptEvidence":"証拠","receiptEvidenceValue":"署名・検証情報の参照","receiptOutcome":"結果","receiptOutcomeValue":"検証の結果","p3Caveat":"ここに示すのは想定している情報の分類で、確定済みスキーマではありません。レシートは検証行為についての追跡可能な記録であり、エージェントの安全性や主張の真実性そのものを保証するものではありません。","protoBottomLabel":"設計上の考え方","protoBottomText":"既知の公開鍵に対する署名は、中央管理者の台帳がなくても検証できます。ただし、誰を信頼するべきか、鍵の紛失・更新にどう対応するか、紛争時にどう判断するかは、実運用で別途設計が必要です。","protoCta":"プロトコル開発の相談","serviceRouteLabel":"典型的な開発の進め方","serviceRoute1":"要件整理","serviceRoute2":"試作","serviceRoute3":"統合","serviceRoute4":"技術支援","addressLabel":"事業所在地","businessAddress":"〒220-0072<br>神奈川県横浜市西区浅間町1丁目4番3号<br>ウィザードビル402","engagementLabel":"ご相談内容","engagementText":"エージェント受託開発 · 信頼プロトコル設計 · システム統合 · 技術サポート","protoNotes":"技術的な研究ノートを読む"};
+ const translations = {"skip":"本文へ移動","navWhy":"視点","navMethod":"アプローチ","navWork":"プロダクト","navServices":"サービス","navContact":"お問い合わせ","eyebrow":"独立系AIシステム・信頼基盤開発スタジオ","hero1":"自律するAI。","hero2":"安全な境界。","hero3":"人間の主導権。","heroDesc":"NashHashは、端末内で動くパーソナルAIと、実地検証を重ねるエージェント向け信頼プロトコルを開発しています。実用的なプロダクト、暗号学的な検証技術、受託エンジニアリングを通じて、自律型AIが明確な境界のもとで行動できる基盤をつくります。","explore":"開発中の製品を見る","heroAside":"プロダクト・プロトコル・技術開発 / 日本","seal1":"信頼を、<br>技術に。","seal2":"人間とエージェントの<br>境界設計","scroll":"スクロールして見る","heroFoot":"NashHash / 独立系スタジオ / 日本","whyLabel":"01 / 課題","why1":"知能だけでは、","why2":"守れない","why3":"境界がある。","whyDesc":"ソフトウェアが意思決定し、ツールを使い、ほかのシステムと協働するようになると、行動のたびに問いが生まれます。誰が行動したのか。誰が許可したのか。何が起こり、どう確かめられるのか。これはモデルだけでなく、基盤設計の課題です。","whyNote":"AIの自律性に対する実践的な視点","whyQuote":"能力を高める。責任の所在を明確にする。","interludeLabel":"明確な境界から設計する","interludeText":"自律する自由。<br>信頼できる根拠。","methodLabel":"02 / アプローチ","method1":"自律性から","method2":"検証可能性へ。","step1Title":"識別する。","step1Desc":"やり取りの背後にあるシステムや暗号鍵を識別します。署名を使ったチャレンジ応答や記録で鍵の継続性を確かめます。署名が検証するのは鍵の保有であり、現実世界の本人性には別の証拠が必要です。","step2Title":"権限を定める。","step2Desc":"どの資源にアクセスでき、どの操作が許され、いつ承認が必要で、どう失効・取り消しできるのか。委譲する権限を明確に設計します。","step3Title":"結果を確かめる。","step3Desc":"重要な操作と結果を、検証可能な証跡として残します。署名付き通信、来歴情報、機械的に検証できるレシートなどを研究しています。","visualNote":"構想段階の概念図 / 完成済み製品ではありません。","workLabel":"03 / プロダクト・研究開発","work1":"研究成果を","work2":"使えるシステムへ。","workDesc":"ローカルで動作するパーソナルエージェントと、再利用可能なエージェント信頼基盤の要素技術を開発しています。各領域の開発段階を明示し、検証したコンポーネントを将来的に実用的な基盤サービスへ発展させることを目指します。","photoNote":"イメージ写真","proj1a":"スマホで動く","proj1b":"自律型エージェント。","proj1Desc":"一般的なスマートフォンや処理性能が限られた端末での利用を想定した、自律型パーソナルエージェントアプリを開発中です。端末内での実行、重要な操作に対する利用者の承認、必要な場合だけ外部の推論処理を使う設計を重視しています。","proj1Status":"パーソナルエージェントアプリ / 開発中","proj2a":"AIエージェントの","proj2b":"信頼基盤。","proj2Desc":"エージェント識別と署名付き投稿のプロトコルは、すでにエージェントコミュニティで実地検証を行っています。参加者による暗号学的な検証の再現や、継続的な鍵ベースのハンドシェイクで得た知見を、再利用可能な信頼コンポーネントへ発展させています。","proj2Status":"エージェント識別・投稿マーキング / 実地検証中","boundaryLabel":"研究領域 / 03 — 権限委譲とポリシー","boundary1":"エージェントが守れる","boundary2":"権限と証跡。","boundaryDesc":"提案中の権限委譲・証跡レイヤーでは、操作範囲を限定し、重要な操作に承認を求め、権限の期限や取り消しを設定し、行われた行動を記録する構造を検討しています。現在はインフラの設計段階であり、公開運用中のサービスではありません。","boundaryStatus":"権限委譲・証跡基盤 / 設計段階","servicesLabel":"05 / エンジニアリングサービス","services1":"構想を、","services2":"動くシステムへ。","servicesDesc":"自律型ソフトウェアを開発するチームに向けて、エージェント受託開発、信頼プロトコル設計、実現性調査、システム統合、技術サポートを提供します。案件ごとに成果物と範囲を明確にします。","service1Title":"エージェントシステム開発","service1Desc":"タスク指向エージェント、ローカル優先のアシスタント、実行基盤、ツール連携、マルチエージェントワークフローの設計・受託開発。技術的な実現性調査や限定的なPoCから着手できます。","service1Type":"開発・統合","service2Title":"ID・信頼プロトコル設計","service2Desc":"署名付きのやり取り、公開鍵の検証、権限委譲、来歴情報、技術的なポリシー制御、第三者が検証可能な証跡の設計・統合。","service2Type":"設計・検証","service3Title":"評価・技術サポート","service3Desc":"アーキテクチャレビュー、検証テスト計画、統合支援、技術仕様書の作成、エージェントシステムの継続的なサポート。案件ごとに範囲や検収基準を合意します。","service3Type":"評価・支援","statementLabel":"長期的な方向性","statement1":"エージェントが動き、","statement2":"人間が舵を取る。","statementDesc":"独立したAIシステムが役立つ仕事に参加するとき、ID・権限・責任の所在が後付けにならない基盤を目指しています。安全のための仕組みは、最初からシステムに組み込まれるべきだと考えています。","contactLabel":"06 / お問い合わせ","contact1":"ともに築く、","contact2":"次のインフラ。","contactDesc":"自律型エージェント、暗号鍵による識別、安全な権限委譲の開発を検討していますか。構築したいものと技術的な制約をお聞かせください。共同研究、受託開発、システム統合のご相談を歓迎します。","footerStudio":"独立系AIシステム・信頼基盤開発スタジオ。<br>日本・横浜。","backTop":"ページ先頭へ ↗","photoLicense":"写真素材・ライセンス ↗","heroAlt":"青空の下に広がる、陽光の差し込む白い建築構造","interludeAlt":"陽光と影が生み出す、オレンジ色の建築のアーチ","phoneAlt":"柔らかな背景の前でスマートフォンを持つ手のイメージ写真","stairsAlt":"複数の階層と境界を想起させる建築の階段の写真","navProtocols":"プロトコル","product1ScopeLabel":"開発で重視している機能","product1Point1":"端末性能に配慮したローカル実行","product1Point2":"利用者が管理するツール権限とタスク実行","product1Point3":"複雑な処理に限った外部推論の選択肢","product2ScopeLabel":"研究している構成要素","product2Point1":"公開鍵とチャレンジ応答による識別検証","product2Point2":"公開投稿の署名付き出所マーカー","product2Point3":"検証行為を記録する持ち運び可能なレシート","boundaryPath1":"権限を定義","boundaryPath2":"操作を承認","boundaryPath3":"証跡を記録","protocolLabel":"04 / プロトコル研究","protocolHeadline1":"信頼を、","protocolHeadline2":"検証可能な手順へ。","protocolIntro":"エージェント識別と投稿マーキングのプロトコルは、実際のエージェント間交流で検証・運用され、得られた結果が次の改訂に反映されています。信用レシートは引き続き共同設計段階です。基盤となる考え方は「鍵 → 署名 → 検証」です。","formula1":"鍵","formula2":"署名","formula3":"検証","p1Title1":"ハンドル名より","p1Title2":"鍵で識別する。","p1Body":"エージェントの名前は誰でも名乗れます。識別プロトコルは、公開鍵を相手の継続的な識別の基準として扱います。新しく生成した予測困難なノンスへの署名によって、応答者が対応する秘密鍵を現在保有していることを確認します。","p1Stage":"エージェント識別 / v0.2 実地検証済みのハンドシェイク","p1Diagram":"チャレンジ応答の4ステップ","p1Step1Title":"挨拶","p1Step1":"2体のエージェントが会話を開始し、互いに挨拶します。","p1Step2Title":"公開鍵の交換","p1Step2":"双方が検証用の公開鍵を交換します。技術的な名刺のような役割です。","p1Step3Title":"新しいノンスへ署名","p1Step3":"検証側が一度限りの予測困難な値を送り、応答側が秘密鍵で署名します。","p1Step4Title":"署名を検証","p1Step4":"公開鍵で署名を確認し、その鍵のフィンガープリントと結果を対応づけます。","p1Caveat":"確認できるのは、チャレンジ時点でその秘密鍵を保有していたことです。法的な本人確認や、鍵の漏えい後の継続性まで保証するものではありません。初回の鍵のひも付け、鍵の更新・失効、リプレイ攻撃への対策も重要な設計課題です。","p2Title1":"投稿の出所を","p2Title2":"検証可能に。","p2Body":"投稿マーキングv0.1は、プロジェクトが公開する投稿に継続的に利用しています。短い署名マーカーにより、アカウント名だけに頼らず投稿の暗号学的な出所を検証できます。コミュニティ参加者による一連の検証が成功し、その結果や改善提案を次の改訂へ取り込んでいます。","p2Stage":"投稿マーキング / v0.1 継続運用・v0.2 改訂中","p2Diagram":"投稿イメージ","p2PostText":"今回の共同作業の結果を公開しました。","p2MarkerLabel":"署名付き出所マーカー","p2Verify1":"マーカーを読む","p2Verify2":"公開鍵を確認","p2Verify3":"署名を検証","p2Caveat":"図のマーカーは例示であり、実際の署名ではありません。フィールドテストでは、マーカー行を削除した後の末尾空白がハッシュ不一致の原因となりました。v0.2では正規化ルールとテストベクタを改善し、署名が対象の投稿本文に正しく結び付くことを重視しています。","p3Title1":"検証した事実を","p3Title2":"持ち運べる記録へ。","p3Body":"信用レシートは、誰が・何を・いつ検証し、何を根拠に結果を出したかを記録する共有可能な形式を目指しています。共同で設計を進めており、v0.3は設計凍結に向けた段階です。完成した標準規格や運用中の検証ネットワークではありません。","p3Stage":"信用レシート / v0.3 設計中","p3Diagram":"概念的な検証レシート","receiptWho":"検証者","receiptWhoValue":"検証鍵や検証者の参照情報","receiptWhen":"日時","receiptWhenValue":"検証のタイムスタンプ","receiptWhat":"対象","receiptWhatValue":"主張や成果物の参照情報","receiptEvidence":"証拠","receiptEvidenceValue":"署名・検証情報の参照","receiptOutcome":"結果","receiptOutcomeValue":"検証の結果","p3Caveat":"ここに示すのは想定している情報の分類で、確定済みスキーマではありません。レシートは検証行為についての追跡可能な記録であり、エージェントの安全性や主張の真実性そのものを保証するものではありません。","protoBottomLabel":"設計上の考え方","protoBottomText":"既知の公開鍵に対する署名は、中央管理者の台帳がなくても検証できます。ただし、誰を信頼するべきか、鍵の紛失・更新にどう対応するか、紛争時にどう判断するかは、実運用で別途設計が必要です。","protoCta":"プロトコル開発の相談","serviceRouteLabel":"典型的な開発の進め方","serviceRoute1":"要件整理","serviceRoute2":"試作","serviceRoute3":"統合","serviceRoute4":"技術支援","addressLabel":"事業所在地","businessAddress":"〒220-0072<br>神奈川県横浜市西区浅間町1丁目4番3号<br>ウィザードビル402","engagementLabel":"ご相談内容","engagementText":"エージェント受託開発 · 信頼プロトコル設計 · システム統合 · 技術サポート","protoNotes":"技術的な研究ノートを読む","fieldLabel":"運用・検証記録 / 2026年10月","fieldTitle1":"公開の場で検証し、","fieldTitle2":"実運用から改善する。","fieldIntro":"2026年10月、エージェントコミュニティで署名付き投稿の検証手順と鍵ベースのハンドシェイクを実施しました。第三者が検証を再現する過程で得られた結果や指摘を、次のプロトコル改訂へ反映しています。","fieldMetric1Label":"一連の検証に成功","fieldMetric1":"コミュニティの参加者2体が、sealed boxの復号、投稿ハッシュの再計算、Ed25519署名の検証、マーカーの一致確認までを再現しました。","fieldMetric2Label":"鍵の保有を確認した相手","fieldMetric2":"継続中のエージェント間交流で、7体の相手と暗号鍵の保有を確かめるハンドシェイクを完了しています。人間としての本人確認を意味するものではありません。","fieldIterLabel":"改善につながった発見","fieldIterIntro":"議論で終わらせず、検証結果と改善提案を仕様へ取り込みます。","fieldChange1Title":"第三者が再現できる正規化。","fieldChange1":"マーカー行を除去した後の末尾空白が検証不一致の原因と判明し、正規化の手順とテストベクタを見直しました。","fieldChange2Title":"チャレンジと権限の意味を明確に。","fieldChange2":"発行時刻・有効期限、鍵の証明・友人関係・権限の状態分離、失敗系のテストケースが提案され、v0.2の設計に反映されています。","fieldChange3Title":"信頼の前に、独立した再現性。","fieldChange3":"別々の参加者がハンドシェイクカードのダイジェストや正規化された文字列を独立に再現し、相互運用上の曖昧さを洗い出す助けとなりました。","fieldQuote":"「体験と仕組みを区別することこそ、ここで最も重要な洞察だ。」","fieldQuoteSource":"エージェントコミュニティ参加者のレビューコメント（匿名・日本語訳）","fieldFootnote":"数値はプロジェクトで記録したフィールドテストの結果であり、顧客数や正式な第三者セキュリティ監査の実績ではありません。署名で確認できるのは暗号鍵の保有であり、運用者の法的な本人性ではありません。"};
  const coreText={en:["IDENTITY / KEY CONTINUITY","AUTHORITY / CONTROLLED DELEGATION","EVIDENCE / VERIFIED OUTCOMES"],ja:["識別 / 鍵の継続性","権限 / 委譲と制御","証跡 / 結果の検証"]};
  const get=(s,r=document)=>r.querySelector(s);
  const all=(s,r=document)=>Array.from(r.querySelectorAll(s));
