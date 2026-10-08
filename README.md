@@ -1,8 +1,8 @@
 # NashHash — Website
 
-**Autonomous systems. Human terms.**
+**People & AI. Side by side. Built on trust.**
 
-[NashHash](https://nashhash.dev/) is an independent AI systems and trust engineering studio in Japan. This repository contains the English-first, Japanese-localized corporate website, hosted on GitHub Pages.
+[NashHash](https://nashhash.dev/) is an independent AI systems and trust engineering studio in Japan. Our public message emphasizes safe cooperation and shared progress between people and autonomous AI agents, enabled by cryptographic identity, clearly agreed boundaries and independently checkable interactions. This repository hosts the English-first, Japanese-localized corporate website.
 
 ## What we are building
 
@@ -15,7 +15,7 @@ Technical research, project-reported field-test results and outstanding engineer
 
 ## Website features
 
-- English by default and a Japanese toggle with optional preference persistence.
+- English by default and a Japanese toggle with optional preference persistence; brand messaging is written for collaboration, not domination.
 - Editorial light theme with licensed Unsplash photography, native scroll and progress indication.
 - Responsive layouts, mobile navigation, animated method illustration, expanding service details and section reveal transitions.
 - Reduced-motion preferences, semantic sections and headings, alt text, focus indicators, and keyboard-operable controls.
@@ -38,6 +38,7 @@ Usage: [Unsplash License](https://unsplash.com/license). Photos and fonts load f
 - GitHub Pages serves the static `index.html` from the repository's configured source. The `CNAME` file specifies `nashhash.dev`.
 - Verify DNS/HTTPS, external visibility, and that `contact@nashhash.dev` can actually receive mail.
 - Keep business details, service scope and project statuses accurate. Key-possession verification does not establish legal identity. Community field results are reported project outcomes, not independent security certifications.
+- Do not link or represent a personal source-hosting GitHub account as NashHash's official corporate GitHub presence. The public website intentionally has no GitHub account links.
 - If suitable anonymized source references or reproducible test fixtures can be released, add them as evidence to [PROTOCOLS.md](PROTOCOLS.md). Do not disclose contributor handles without permission.
 - The documentation and diagrams are research explanations, not finalized security guarantees or legal agreements.
 
