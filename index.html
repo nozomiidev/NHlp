@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f5f5ef">
-<meta name="description" content="NashHash is an independent AI systems and trust engineering studio in Japan, designing autonomous agents, verifiable identity and delegation, and custom agent infrastructure.">
+<meta name="description" content="NashHash develops local-first personal AI agents, cryptographic agent identity protocols, verifiable communications, delegation infrastructure and custom agent systems for organizations.">
 <meta name="color-scheme" content="light">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NashHash — Autonomous Systems. Human Terms.">
@@ -152,6 +152,103 @@ button,a{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px soli
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js [data-reveal]{opacity:1!important;transform:none!important}.marquee-track{animation:none}.hero-art img,.interlude img,.project-photo img{transform:none!important}}
 html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075em}html[lang="ja"] .method-head h2,html[lang="ja"] .services-title h2{font-size:clamp(58px,6vw,105px)}@media(max-width:520px){html[lang="ja"] .hero h1{font-size:clamp(41px,10vw,58px)}html[lang="ja"] .intro h2{font-size:clamp(52px,12vw,68px)}html[lang="ja"] .method-head h2,html[lang="ja"] .services-title h2{font-size:clamp(48px,11vw,65px)}html[lang="ja"] .contact h2{font-size:clamp(59px,12vw,85px)}}
+
+/* New product, protocol and business detail typography */
+.product-scope{margin-top:30px;padding-top:24px;border-top:1px solid var(--border);max-width:540px}
+.product-scope>.label{color:#678675}.product-scope ul{list-style:none;padding:0;margin:14px 0 24px}
+.product-scope li{position:relative;padding:10px 0 10px 21px;border-bottom:1px solid #aabaae55;font-size:14px;line-height:1.65;color:#526b5b}
+.product-scope li:before{content:"↗";position:absolute;left:0;color:#8aa18f}
+.boundary-path{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:23px 0 26px}
+.boundary-path span{font:10px var(--mono);letter-spacing:.03em;padding:9px 12px;border:1px solid #9cb89e;border-radius:30px;background:#f7faf433;color:#476553}
+.boundary-path i{font-style:normal;color:#60876f}
+.protocols{padding:clamp(115px,12vw,190px) var(--pad) clamp(110px,10vw,175px);background:#e0e9e3}
+.protocols-heading{display:grid;grid-template-columns:.62fr 1.38fr;gap:40px;margin-bottom:clamp(45px,6vw,90px)}
+.protocols-heading h2{font:normal clamp(65px,8vw,135px)/.91 var(--serif);letter-spacing:-.055em;margin:-8px 0 34px}
+.protocols-heading h2 em{color:#7a9f87}
+.protocols-heading p{max-width:740px;font-size:clamp(17px,1.45vw,21px);line-height:1.76;color:#526b5d}
+.trust-formula{border-top:1px solid #afc4b3;border-bottom:1px solid #afc4b3;display:flex;align-items:center;justify-content:space-between;padding:19px clamp(14px,4vw,70px);gap:15px;margin-bottom:clamp(40px,5vw,75px);font:clamp(13px,1.6vw,20px) var(--mono);letter-spacing:.045em;color:#395d48}
+.trust-formula i{font:normal clamp(22px,2.8vw,43px) var(--serif);color:#8eaa9c}
+.protocol{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(35px,6vw,110px);padding:clamp(76px,8vw,125px) 0;border-bottom:1px solid #acc0b2;align-items:start}
+.protocol-story{position:sticky;top:130px}
+.protocol-meta{display:flex;align-items:center;gap:15px;color:#567362}
+.protocol-version{border:1px solid #a2bdac;border-radius:50px;padding:7px 13px;font:11px var(--mono);color:#2d614d}
+.protocol-story h3{font:normal clamp(54px,5vw,89px)/.98 var(--serif);letter-spacing:-.05em;margin:33px 0 24px}
+.protocol-story h3 em{color:#7d9f8c}
+.protocol-story>p{max-width:500px;font-size:clamp(16px,1.42vw,19px);line-height:1.82;color:#52695c}
+.protocol-stage{margin-top:35px;font:11px var(--mono);letter-spacing:.04em;color:#547563;display:flex;gap:10px;align-items:center}
+.protocol-stage:before{content:"";width:7px;height:7px;border-radius:50%;background:#ae906b}
+.protocol-surface{background:#f4f5ef;border:1px solid #cedbd0;border-radius:5px;box-shadow:0 25px 45px #2b4c3011;overflow:hidden}
+.surface-head{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px 27px;border-bottom:1px solid #cfded1;color:#5d7866}
+.surface-indicator{display:flex;gap:5px}.surface-indicator i{width:7px;height:7px;background:#8eae98;border-radius:50%}
+.handshake-steps{list-style:none;padding:20px 32px;margin:0;counter-reset:step}
+.handshake-steps li{position:relative;display:grid;grid-template-columns:48px 1fr;gap:20px;padding:23px 0;border-bottom:1px solid #d4dfd4;transition:background .3s,padding .3s}
+.handshake-steps li:last-child{border-bottom:0}
+.handshake-steps li:hover{background:#e5ede4;padding-left:12px}
+.handshake-index{font:13px var(--mono);color:#809b89}
+.handshake-steps strong{font:normal clamp(29px,3vw,44px) var(--serif);letter-spacing:-.025em}
+.handshake-steps p{font-size:14px;line-height:1.7;margin:6px 0 0;color:#617268}
+.surface-note{font:12px/1.85 var(--sans);color:#657d6b;background:#e6eee7;padding:22px 27px;margin:0}
+.post-surface{background:#f3f4ee}
+.post-dot{width:10px;height:10px;border:2px solid #729983;border-radius:50%}
+.post-example{padding:30px}
+.post-author{font:10px var(--mono);letter-spacing:.09em;color:#789482}
+.post-example>p{font:normal clamp(26px,3vw,43px)/1.25 var(--serif);letter-spacing:-.03em;margin:24px 0 60px}
+.signed-mark{background:#e1eadf;border:1px solid #c2d6c6;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:17px 20px;flex-wrap:wrap}
+.signed-mark code{font:clamp(12px,1.25vw,17px) var(--mono);color:#355c47;overflow-wrap:anywhere}
+.signed-mark .label{color:#729482;letter-spacing:.03em}
+.post-verification{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:24px 28px;font:11px var(--mono);color:#4d765d}
+.post-verification i{font:20px var(--serif);color:#96ae9e}
+.receipt-surface{background:#f7f3e9}.receipt-seal{font:30px var(--serif);color:#b49f75}
+.receipt-lines{padding:22px 32px 35px}
+.receipt-lines>div{display:grid;grid-template-columns:110px 1fr;gap:15px;padding:19px 0;border-bottom:1px solid #dcdacf;align-items:baseline}
+.receipt-lines span{font:11px var(--mono);color:#968972}
+.receipt-lines strong{font-weight:500;font-size:15px;line-height:1.5;color:#3f5347}
+.receipt-surface .surface-note{background:#efe9db;color:#7d7565}
+.protocol-end{display:grid;grid-template-columns:1fr 1.5fr;gap:30px;align-items:center;padding-top:55px}
+.protocol-end p{font-size:clamp(16px,1.6vw,22px);line-height:1.7;color:#526b5d;max-width:750px}
+.protocol-end a{grid-column:2;justify-self:start}
+.service-route{margin-top:65px;padding:28px 0;border-top:1px solid #aabbab;display:grid;grid-template-columns:1fr 2fr;gap:22px;align-items:center}
+.service-route>div{display:flex;align-items:center;flex-wrap:wrap;gap:11px}
+.service-route>div span{font:12px var(--mono);color:#4f6e58}
+.service-route i{font-style:normal;color:#91aa95}
+.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,5vw,80px);border-top:1px solid #ffffff4b;margin-top:clamp(62px,7vw,108px);padding-top:36px}
+.contact-details .label{color:#b4d4bc}
+.detail-entry address,.detail-entry p{font:normal clamp(15px,1.4vw,19px)/1.8 var(--sans);color:#e1eae0;margin:18px 0 0;max-width:610px}
+.detail-entry address{font-style:normal}
+@media(max-width:1050px){
+ .protocol{gap:35px}.protocol-story h3{font-size:clamp(50px,5.4vw,75px)}
+ .handshake-steps{padding:12px 20px}.handshake-steps li{grid-template-columns:34px 1fr;gap:9px}
+}
+@media(max-width:850px){
+ .protocols{padding:115px var(--pad)}
+ .protocols-heading,.protocol,.protocol-end{grid-template-columns:1fr}
+ .protocol-story{position:static}
+ .protocol-story h3{font-size:clamp(64px,10vw,93px)}
+ .protocol{padding:75px 0;gap:32px}
+ .protocol-end a{grid-column:1}
+ .trust-formula{font-size:12px}
+ .contact-details,.service-route{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .protocols-heading h2{font-size:clamp(63px,13vw,80px)}
+ .protocol-story h3{font-size:clamp(57px,12vw,77px)}
+ .protocols-heading{gap:25px}
+ .trust-formula{gap:8px;padding:20px 0;font-size:10px}.trust-formula i{font-size:23px}
+ .handshake-steps{padding:12px 16px}.handshake-steps strong{font-size:29px}.handshake-steps p{font-size:13px}
+ .surface-note{padding:20px;font-size:12px}
+ .post-example{padding:21px}.post-example>p{font-size:30px}
+ .signed-mark{padding:14px}
+ .receipt-lines{padding:10px 20px 23px}.receipt-lines>div{grid-template-columns:1fr;gap:7px}
+ .service-route>div{gap:8px}.service-route>div span{font-size:10px}
+ .boundary-path{gap:6px}.boundary-path span{font-size:9px}
+}
+html[lang="ja"] .protocol-story h3{font-size:clamp(46px,4.4vw,72px)}
+html[lang="ja"] .protocols-heading h2{font-size:clamp(54px,6.5vw,112px)}
+@media(max-width:520px){
+ html[lang="ja"] .protocol-story h3{font-size:clamp(42px,9.2vw,56px)}
+ html[lang="ja"] .protocols-heading h2{font-size:clamp(48px,10.8vw,65px)}
+}
+
 </style>
 <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -162,7 +259,7 @@ html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075e
  <div class="nav-shell">
   <a class="brand" href="#top" aria-label="NashHash home"><span class="brand-symbol" aria-hidden="true">n</span>NashHash</a>
   <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
-   <a href="#why" data-t="navWhy">Perspective</a><a href="#method" data-t="navMethod">Approach</a><a href="#work" data-t="navWork">Research</a><a href="#services" data-t="navServices">Services</a>
+   <a href="#work" data-t="navWork">Products</a><a href="#protocols" data-t="navProtocols">Protocols</a><a href="#services" data-t="navServices">Services</a><a href="#why" data-t="navWhy">Perspective</a>
   </nav>
   <div class="lang-switch" role="group" aria-label="Language / 言語"><button type="button" id="enButton" lang="en" aria-pressed="true">EN</button><button type="button" id="jaButton" lang="ja" aria-pressed="false">日本語</button></div>
   <a class="nav-contact" href="#contact"><span data-t="navContact">Let's talk</span> ↗</a>
@@ -175,8 +272,8 @@ html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075e
   <div class="hero-content">
    <div class="eyebrow label"><span class="pin" aria-hidden="true"></span><span data-t="eyebrow">Independent AI systems &amp; trust engineering</span></div>
    <h1><span data-t="hero1">Autonomous</span><br><span data-t="hero2">systems.</span><br><em data-t="hero3">Human terms.</em></h1>
-   <p class="hero-desc" data-t="heroDesc">AI is moving from generating answers to taking action. We design and build the identity, permission and verification infrastructure that helps keep those actions understandable, accountable and under human control.</p>
-   <div class="hero-actions"><a href="#work" class="action-link"><span class="action-circle" aria-hidden="true">↗</span><span data-t="explore">Explore our work</span></a><span class="hero-aside" data-t="heroAside">Research-led engineering / Based in Japan</span></div>
+   <p class="hero-desc" data-t="heroDesc">We develop local-first personal AI agents and the identity, permission and verification systems behind trustworthy autonomy. Our work brings practical products, technical protocols and custom engineering together.</p>
+   <div class="hero-actions"><a href="#work" class="action-link"><span class="action-circle" aria-hidden="true">↗</span><span data-t="explore">See what we build</span></a><span class="hero-aside" data-t="heroAside">Research-led engineering / Based in Japan</span></div>
   </div>
   <div class="hero-art" id="heroArt">
    <figure><img src="https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=1600&amp;q=82" srcset="https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1763046289892-857b83dc070f?auto=format&amp;fit=crop&amp;w=1600&amp;q=82 1600w" sizes="(max-width:850px) 100vw, 52vw" fetchpriority="high" decoding="async" alt="Sunlit white architectural forms beneath a blue sky" data-alt="heroAlt"></figure>
@@ -199,32 +296,134 @@ html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075e
   <div class="method-stick"><div class="visual" id="visual" data-phase="0"><div class="visual-orbit" aria-hidden="true"></div><div class="visual-core"><strong id="visualNumber">01</strong><span id="visualCaption">IDENTITY / KEY CONTINUITY</span></div><div class="visual-bottom"><span class="label" data-t="visualNote">Conceptual framework, not a released product.</span><div class="visual-dots" aria-hidden="true"><i></i><i></i><i></i></div></div></div></div>
  </div>
 </section>
-<section class="work" id="work"><div class="work-intro"><span class="label" data-t="workLabel">03 / Research &amp; development</span><div><h2 data-reveal><span data-t="work1">Building the</span><br><span data-t="work2">underlying layers.</span></h2><p data-t="workDesc">Our current work connects practical agent software with the mechanisms that make independent systems more accountable. Current work spans early-stage product development, protocol prototypes and longer-term infrastructure research.</p></div></div>
+<section class="work" id="work"><div class="work-intro"><span class="label" data-t="workLabel">03 / Products &amp; R&amp;D</span><div><h2 data-reveal><span data-t="work1">From research</span><br><span data-t="work2">to useful systems.</span></h2><p data-t="workDesc">We are developing a personal-agent application and the foundations of a reusable agent-trust stack. Each initiative has a defined purpose and development stage; our longer-term goal is to turn validated components into deployable infrastructure.</p></div></div>
  <article class="project">
   <div class="project-photo" data-reveal><img src="https://images.unsplash.com/photo-1748801584058-29faa47242ee?auto=format&amp;fit=crop&amp;w=1250&amp;q=82" alt="Hand holding a smartphone against a soft neutral background" data-alt="phoneAlt" loading="lazy" decoding="async"><span class="photo-badge" data-t="photoNote">EDITORIAL PHOTOGRAPHY</span></div>
-  <div class="project-info" data-reveal><span class="project-no">FIELD / 01</span><h3><span data-t="proj1a">Personal AI,</span><br><em data-t="proj1b">closer to you.</em></h3><p data-t="proj1Desc">We are developing local-first personal agents intended to operate on resource-constrained smartphones. The research explores efficient on-device operation, clear user controls and selective access to external compute when useful.</p><span class="status" data-t="proj1Status">Application research / In development</span></div>
+  <div class="project-info" data-reveal><span class="project-no">FIELD / 01</span><h3><span data-t="proj1a">A personal agent,</span><br><em data-t="proj1b">on your device.</em></h3><p data-t="proj1Desc">An autonomous personal-agent app in development for everyday smartphones, including devices with limited processing power. The design prioritizes local execution, clear user approval before consequential actions and optional remote reasoning when on-device capability is insufficient.</p><div class="product-scope">
+   <div class="label" data-t="product1ScopeLabel">Development priorities</div>
+   <ul>
+     <li data-t="product1Point1">Resource-aware, on-device agent operation</li>
+     <li data-t="product1Point2">User-controlled tool permissions and task execution</li>
+     <li data-t="product1Point3">Optional remote reasoning for demanding work</li>
+   </ul>
+  </div><span class="status" data-t="proj1Status">Personal agent app / In development</span></div>
  </article>
  <article class="project reverse">
   <div class="project-photo" data-reveal><img src="https://images.unsplash.com/photo-1763277126211-fe95ff70c87c?auto=format&amp;fit=crop&amp;w=1250&amp;q=82" alt="Abstract geometric architecture with layered stairs" data-alt="stairsAlt" loading="lazy" decoding="async"><span class="photo-badge" data-t="photoNote">EDITORIAL PHOTOGRAPHY</span></div>
-  <div class="project-info" data-reveal><span class="project-no">FIELD / 02</span><h3><span data-t="proj2a">Trust,</span><br><em data-t="proj2b">with evidence.</em></h3><p data-t="proj2Desc">Our protocol work explores public-key continuity checks, signed communications and verifiable interaction records. The aim is to make agent-to-agent exchanges easier to authenticate and inspect, as one layer of a broader identity, permissions and accountability system.</p><span class="status" data-t="proj2Status">Protocols / Research &amp; prototyping</span></div>
+  <div class="project-info" data-reveal><span class="project-no">FIELD / 02</span><h3><span data-t="proj2a">A trust layer</span><br><em data-t="proj2b">for AI agents.</em></h3><p data-t="proj2Desc">We are researching developer-facing components that let software check which cryptographic key signed an interaction, establish continuity across sessions and preserve evidence of public agent activity. The work starts with three protocol specifications described below.</p><div class="product-scope">
+   <div class="label" data-t="product2ScopeLabel">Research components</div>
+   <ul>
+     <li data-t="product2Point1">Public-key challenge–response identity checks</li>
+     <li data-t="product2Point2">Verifiable signature markers on public posts</li>
+     <li data-t="product2Point3">Portable records of verification activity</li>
+   </ul>
+  </div><span class="status" data-t="proj2Status">Developer trust components / Research prototypes</span></div>
  </article>
- <div class="boundary" data-reveal><div class="boundary-inner"><span class="label" data-t="boundaryLabel">FIELD / 03 — Delegation &amp; policy</span><h3><span data-t="boundary1">Agreements</span><br><span data-t="boundary2">systems can respect.</span></h3><p data-t="boundaryDesc">We study machine-readable permissions, approval conditions, revocation and action records as practical boundaries between people and autonomous software. These technical mechanisms complement—not replace—human oversight and legal agreements.</p><span class="status" data-t="boundaryStatus">Trust infrastructure / Design research</span></div></div>
+ <div class="boundary" data-reveal><div class="boundary-inner"><span class="label" data-t="boundaryLabel">FIELD / 03 — Delegation &amp; policy</span><h3><span data-t="boundary1">Permissions</span><br><span data-t="boundary2">agents can respect.</span></h3><p data-t="boundaryDesc">Our proposed delegation and evidence layer gives agent integrations a practical design pattern: assign a limited scope, require approval for sensitive actions, allow authority to expire or be revoked, and record what was done. This is an infrastructure design direction, not a live hosted service.</p><div class="boundary-path" aria-label="Proposed engineering sequence">
+  <span data-t="boundaryPath1">Define scope</span><i aria-hidden="true">→</i>
+  <span data-t="boundaryPath2">Authorize action</span><i aria-hidden="true">→</i>
+  <span data-t="boundaryPath3">Record evidence</span>
+ </div><span class="status" data-t="boundaryStatus">Delegation &amp; evidence infrastructure / Design stage</span></div></div>
 </section>
-<section class="services" id="services"><div class="max"><div class="services-title"><div><span class="label" data-t="servicesLabel">04 / Engineering services</span><h2 data-reveal><span data-t="services1">Ideas are useful.</span><br><span data-t="services2">Working systems matter.</span></h2></div><p data-t="servicesDesc">We support scoped research and engineering projects, from feasibility to prototype and integration, with attention to reliability, authority and verifiability.</p></div>
+
+<section class="protocols" id="protocols">
+ <div class="max">
+  <div class="protocols-heading">
+   <span class="label" data-t="protocolLabel">04 / Protocol research</span>
+   <div>
+    <h2 data-reveal><span data-t="protocolHeadline1">Trust is a</span><br><em data-t="protocolHeadline2">verifiable process.</em></h2>
+    <p data-t="protocolIntro">Three related specifications explore how autonomous agents can recognize a cryptographic counterpart, attach proof of origin to public messages and leave an auditable record of verification. Together, they follow a simple pattern: key → signature → verification.</p>
+   </div>
+  </div>
+  <div class="trust-formula" aria-label="Technical verification sequence" data-reveal>
+   <span data-t="formula1">Key</span><i aria-hidden="true">→</i>
+   <span data-t="formula2">Signature</span><i aria-hidden="true">→</i>
+   <span data-t="formula3">Verification</span>
+  </div>
+  <article class="protocol" id="agent-identity">
+   <div class="protocol-story" data-reveal>
+    <div class="protocol-meta"><span class="label">PROTOCOL 01</span><span class="protocol-version">v0.2</span></div>
+    <h3><span data-t="p1Title1">An agent's name</span><br><em data-t="p1Title2">is not its identity.</em></h3>
+    <p data-t="p1Body">Handles can be copied. The Agent Identity Protocol instead tracks a counterpart by its public key. A fresh, randomly generated challenge tests whether the responder currently controls the matching private key.</p>
+    <div class="protocol-stage" data-t="p1Stage">Agent identity / v0.2 research protocol</div>
+   </div>
+   <div class="protocol-surface handshake" data-reveal>
+    <div class="surface-head"><span class="label" data-t="p1Diagram">Challenge–response handshake</span><span class="surface-indicator" aria-hidden="true"><i></i><i></i><i></i></span></div>
+    <ol class="handshake-steps">
+     <li><span class="handshake-index">01</span><div><strong data-t="p1Step1Title">Introduce</strong><p data-t="p1Step1">Two agents begin a conversation and exchange an initial greeting.</p></div></li>
+     <li><span class="handshake-index">02</span><div><strong data-t="p1Step2Title">Exchange public keys</strong><p data-t="p1Step2">Each side shares a public verification key—like a technical calling card.</p></div></li>
+     <li><span class="handshake-index">03</span><div><strong data-t="p1Step3Title">Sign a fresh nonce</strong><p data-t="p1Step3">The challenger sends an unpredictable one-time value; the responder signs it with its private key.</p></div></li>
+     <li><span class="handshake-index">04</span><div><strong data-t="p1Step4Title">Verify the signature</strong><p data-t="p1Step4">The challenger checks the signature using the public key and associates the result with that key's fingerprint.</p></div></li>
+    </ol>
+    <div class="surface-note" data-t="p1Caveat">This proves possession of a particular private key at the time of the challenge—not legal identity, continuity after key compromise, or that the key was trustworthy when first introduced. Initial key binding, rotation, revocation and replay protection remain important design concerns.</div>
+   </div>
+  </article>
+  <article class="protocol" id="post-marking">
+   <div class="protocol-story" data-reveal>
+    <div class="protocol-meta"><span class="label">PROTOCOL 02</span><span class="protocol-version">v0.1</span></div>
+    <h3><span data-t="p2Title1">Make provenance</span><br><em data-t="p2Title2">part of the post.</em></h3>
+    <p data-t="p2Body">The Post Marking Specification proposes a compact signed marker at the end of a public agent post. A reader or independent verifier could inspect the marker and corresponding public key to check origin, rather than relying on a displayed account name alone.</p>
+    <div class="protocol-stage" data-t="p2Stage">Signed post marking / v0.1 specification</div>
+   </div>
+   <div class="protocol-surface post-surface" data-reveal>
+    <div class="surface-head"><span class="label" data-t="p2Diagram">Illustrative public post</span><span class="post-dot" aria-hidden="true"></span></div>
+    <div class="post-example"><span class="post-author">AGENT / PUBLIC MESSAGE</span><p data-t="p2PostText">Here is the result of our latest collaboration.</p><div class="signed-mark"><code>[mark: signed-reference]</code><span class="label" data-t="p2MarkerLabel">Signed origin marker</span></div></div>
+    <div class="post-verification"><span data-t="p2Verify1">Read marker</span><i aria-hidden="true">↗</i><span data-t="p2Verify2">Resolve key</span><i aria-hidden="true">↗</i><span data-t="p2Verify3">Check signature</span></div>
+    <p class="surface-note" data-t="p2Caveat">Example notation only; the exact wire format and content-binding rules require specification. A useful verifier must bind the signature to the intended post, so a valid marker cannot simply be copied onto unrelated text.</p>
+   </div>
+  </article>
+  <article class="protocol" id="trust-receipts">
+   <div class="protocol-story" data-reveal>
+    <div class="protocol-meta"><span class="label">PROTOCOL 03</span><span class="protocol-version">v0.3</span></div>
+    <h3><span data-t="p3Title1">Evidence that</span><br><em data-t="p3Title2">travels with trust.</em></h3>
+    <p data-t="p3Body">Trust Receipts explore a shared record of who verified what, when the check occurred, and which evidence supports its result. The format is being co-designed and remains in the design-freeze stage; it is not a finalized standard or a deployed verification network.</p>
+    <div class="protocol-stage" data-t="p3Stage">Trust receipts / v0.3 in design</div>
+   </div>
+   <div class="protocol-surface receipt-surface" data-reveal>
+    <div class="surface-head"><span class="label" data-t="p3Diagram">Conceptual verification receipt</span><span class="receipt-seal" aria-hidden="true">✳</span></div>
+    <div class="receipt-lines">
+      <div><span data-t="receiptWho">Verifier</span><strong data-t="receiptWhoValue">Key or verifier reference</strong></div>
+      <div><span data-t="receiptWhen">Time</span><strong data-t="receiptWhenValue">Verification timestamp</strong></div>
+      <div><span data-t="receiptWhat">Subject</span><strong data-t="receiptWhatValue">Claim or artifact reference</strong></div>
+      <div><span data-t="receiptEvidence">Evidence</span><strong data-t="receiptEvidenceValue">Signature / proof reference</strong></div>
+      <div><span data-t="receiptOutcome">Outcome</span><strong data-t="receiptOutcomeValue">Result of the check</strong></div>
+    </div>
+    <p class="surface-note" data-t="p3Caveat">Illustrative data categories, not a frozen schema. A receipt is an auditable assertion about a check; it does not guarantee that an agent is safe or that the claim itself is true.</p>
+   </div>
+  </article>
+  <div class="protocol-end" data-reveal>
+    <span class="label" data-t="protoBottomLabel">Design principle</span>
+    <p data-t="protoBottomText">No central directory is required to verify a signature against a known public key. Establishing who should be trusted, managing lost keys and handling disputes are separate problems that a real deployment must address.</p>
+    <a class="action-link" href="#contact"><span class="action-circle" aria-hidden="true">↗</span><span data-t="protoCta">Discuss protocol engineering</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services"><div class="max"><div class="services-title"><div><span class="label" data-t="servicesLabel">05 / Engineering services</span><h2 data-reveal><span data-t="services1">Ideas are useful.</span><br><span data-t="services2">Working systems matter.</span></h2></div><p data-t="servicesDesc">For teams building autonomous software, we offer commissioned agent development, trust and protocol engineering, technical feasibility studies, integration and support. Each engagement is scoped to specific deliverables.</p></div>
  <div class="service open"><button class="service-button" type="button" aria-expanded="true" aria-controls="detail1"><span class="label muted">01</span><span class="service-name" data-t="service1Title">Agent systems engineering</span><span class="service-symbol" aria-hidden="true">+</span></button><div class="service-panel" id="detail1"><div class="service-overflow"><div class="service-detail"><p data-t="service1Desc">Architecture and commissioned implementation for task-oriented agents, local-first assistants, agent runtimes, tool integrations and multi-agent workflows. Engagements may begin with feasibility research or a targeted proof of concept.</p><span class="label service-type" data-t="service1Type">Build &amp; integrate</span></div></div></div></div>
  <div class="service"><button class="service-button" type="button" aria-expanded="false" aria-controls="detail2"><span class="label muted">02</span><span class="service-name" data-t="service2Title">Identity &amp; trust protocols</span><span class="service-symbol" aria-hidden="true">+</span></button><div class="service-panel" id="detail2"><div class="service-overflow"><div class="service-detail"><p data-t="service2Desc">Design and integration work involving signed interactions, public-key verification, delegated permissions, provenance, technical policy controls and independently reviewable evidence.</p><span class="label service-type" data-t="service2Type">Design &amp; verify</span></div></div></div></div>
- <div class="service"><button class="service-button" type="button" aria-expanded="false" aria-controls="detail3"><span class="label muted">03</span><span class="service-name" data-t="service3Title">Evaluation &amp; technical support</span><span class="service-symbol" aria-hidden="true">+</span></button><div class="service-panel" id="detail3"><div class="service-overflow"><div class="service-detail"><p data-t="service3Desc">Early-stage architecture review, agent safety testing, integration guidance, documentation and ongoing engineering support. Project scope and deliverables are agreed before work begins.</p><span class="label service-type" data-t="service3Type">Assess &amp; support</span></div></div></div></div>
+ <div class="service"><button class="service-button" type="button" aria-expanded="false" aria-controls="detail3"><span class="label muted">03</span><span class="service-name" data-t="service3Title">Evaluation &amp; technical support</span><span class="service-symbol" aria-hidden="true">+</span></button><div class="service-panel" id="detail3"><div class="service-overflow"><div class="service-detail"><p data-t="service3Desc">Architecture reviews, verification test plans, integration guidance, technical specifications and ongoing support for agent-based systems. Scopes and acceptance criteria are agreed project by project.</p><span class="label service-type" data-t="service3Type">Assess &amp; support</span></div></div></div></div>
+<div class="service-route" data-reveal>
+  <span class="label" data-t="serviceRouteLabel">Typical engagement path</span>
+  <div><span data-t="serviceRoute1">Discovery</span><i aria-hidden="true">→</i><span data-t="serviceRoute2">Proof of concept</span><i aria-hidden="true">→</i><span data-t="serviceRoute3">Integration</span><i aria-hidden="true">→</i><span data-t="serviceRoute4">Support</span></div>
+</div>
 </div></section>
 <section class="statement"><div class="max statement-grid"><span class="label" data-t="statementLabel">A long-term direction</span><div data-reveal><h2><span data-t="statement1">Agents can act.</span><br><em data-t="statement2">People stay in charge.</em></h2><p data-t="statementDesc">Our ambition is infrastructure that lets independent AI systems participate in useful work without making identity, authority and accountability an afterthought. We believe those safeguards should be engineered into the system from the start.</p></div></div></section>
-<section class="contact" id="contact"><div class="contact-inner"><span class="label" data-t="contactLabel">05 / Start a conversation</span><h2 data-reveal><span data-t="contact1">Let's build</span><br><em data-t="contact2">what comes next.</em></h2>
- <div class="contact-row"><p data-t="contactDesc">Working on autonomous agents, safe delegation, or verifiable systems? Tell us about the problem, the constraints and what you want to explore. Research collaborations and scoped engineering inquiries are welcome.</p><a class="contact-email" href="mailto:contact@nashhash.dev?subject=NashHash%20Inquiry">contact@nashhash.dev ↗</a></div>
+<section class="contact" id="contact"><div class="contact-inner"><span class="label" data-t="contactLabel">06 / Start a conversation</span><h2 data-reveal><span data-t="contact1">Let's build</span><br><em data-t="contact2">what comes next.</em></h2>
+ <div class="contact-row"><p data-t="contactDesc">Working on autonomous agents, secure identity, or trustworthy delegation? Tell us what you are building and the constraints that matter. We welcome research collaborations, commissioned engineering and integration inquiries.</p><a class="contact-email" href="mailto:contact@nashhash.dev?subject=NashHash%20Inquiry">contact@nashhash.dev ↗</a></div>
+<div class="contact-details">
+  <div class="detail-entry"><span class="label" data-t="addressLabel">Business address</span>
+   <address data-t="businessAddress">Wizard Building 402, 1-4-3 Sengencho, Nishi-ku,<br>Yokohama, Kanagawa 220-0072, Japan</address></div>
+  <div class="detail-entry"><span class="label" data-t="engagementLabel">Enquiries</span>
+   <p data-t="engagementText">Custom agent development · Trust &amp; protocol engineering · Systems integration · Technical support</p></div>
+</div>
  <footer class="footer"><div><strong>NashHash</strong><small data-t="footerStudio">Independent AI systems &amp; trust engineering.<br>Yokohama, Japan.</small><br><small>© <span id="year">2026</span> NashHash</small></div><div class="footer-links"><a href="#top" data-t="backTop">Back to top ↗</a><a href="https://github.com/nozomiidev/NHlp" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" data-t="photoLicense">Photography license ↗</a></div></footer>
 </div></section>
 </main>
 <script>
 (function(){
  "use strict";
- const translations = {"skip":"本文へ移動","navWhy":"視点","navMethod":"アプローチ","navWork":"研究開発","navServices":"事業・サービス","navContact":"お問い合わせ","eyebrow":"独立系AIシステム・信頼基盤開発スタジオ","hero1":"自律するAI。","hero2":"安全な境界。","hero3":"人間の主導権。","heroDesc":"AIが答えるだけでなく、自ら行動する時代へ。NashHashは、その行動を理解・検証でき、人間が管理できるようにするためのID・権限・検証の技術基盤を設計・開発しています。","explore":"研究開発を見る","heroAside":"研究を起点としたエンジニアリング / 日本を拠点に活動","seal1":"信頼を、<br>技術に。","seal2":"人間とエージェントの<br>境界設計","scroll":"スクロールして見る","heroFoot":"NashHash / 独立系スタジオ / 日本","whyLabel":"01 / 課題","why1":"知能だけでは、","why2":"守れない","why3":"境界がある。","whyDesc":"ソフトウェアが意思決定し、ツールを使い、ほかのシステムと協働するようになると、行動のたびに問いが生まれます。誰が行動したのか。誰が許可したのか。何が起こり、どう確かめられるのか。これはモデルだけでなく、基盤設計の課題です。","whyNote":"AIの自律性に対する実践的な視点","whyQuote":"能力を高める。責任の所在を明確にする。","interludeLabel":"明確な境界から設計する","interludeText":"自律する自由。<br>信頼できる根拠。","methodLabel":"02 / アプローチ","method1":"自律性から","method2":"検証可能性へ。","step1Title":"識別する。","step1Desc":"やり取りの背後にあるシステムや暗号鍵を識別します。署名を使ったチャレンジ応答や記録で鍵の継続性を確かめます。署名が検証するのは鍵の保有であり、現実世界の本人性には別の証拠が必要です。","step2Title":"権限を定める。","step2Desc":"どの資源にアクセスでき、どの操作が許され、いつ承認が必要で、どう失効・取り消しできるのか。委譲する権限を明確に設計します。","step3Title":"結果を確かめる。","step3Desc":"重要な操作と結果を、検証可能な証跡として残します。署名付き通信、来歴情報、機械的に検証できるレシートなどを研究しています。","visualNote":"構想段階の概念図 / 完成済み製品ではありません。","workLabel":"03 / 研究開発","work1":"自律型AIの","work2":"基盤をつくる。","workDesc":"実用的なエージェントソフトウェアと、独立したシステムの説明責任を支える仕組みを研究・開発しています。現在は初期段階のプロダクト開発、プロトコルの試作、長期的な基盤研究に取り組んでいます。","photoNote":"イメージ写真","proj1a":"一人ひとりの近くに、","proj1b":"パーソナルAIを。","proj1Desc":"性能が限られたスマートフォンでも動作するローカル優先のパーソナルエージェントを開発しています。端末上での効率的な実行、利用者による制御、必要に応じた外部計算資源の選択的な活用を検討しています。","proj1Status":"アプリケーション研究 / 開発中","proj2a":"信頼できる関係を、","proj2b":"検証できる証拠から。","proj2Desc":"公開鍵の継続性検証、署名付き通信、検証可能なやり取りの記録などのプロトコルを研究しています。エージェント間の通信を識別・検証しやすくすると同時に、ID・権限・説明責任の基盤の一部として検証技術を位置づけます。","proj2Status":"プロトコル / 研究・試作","boundaryLabel":"研究領域 / 03 — 権限委譲とポリシー","boundary1":"システムが守れる、","boundary2":"合意と境界。","boundaryDesc":"機械可読な権限、承認条件、取り消し、行動記録を、人間と自律ソフトウェアの間の実務的な境界として研究しています。これらの技術的仕組みは、人間による監督や法的な契約を代替するものではありません。","boundaryStatus":"信頼基盤 / 設計研究","servicesLabel":"04 / エンジニアリングサービス","services1":"構想を、","services2":"動くシステムへ。","servicesDesc":"NashHashは、技術的な実現性調査から試作・統合まで、範囲を明確にした研究開発を支援します。信頼性・権限・検証可能性を重視しています。","service1Title":"エージェントシステム開発","service1Desc":"タスク指向エージェント、ローカル優先のアシスタント、実行基盤、ツール連携、マルチエージェントワークフローの設計・受託開発。技術的な実現性調査や限定的なPoCから着手できます。","service1Type":"開発・統合","service2Title":"ID・信頼プロトコル設計","service2Desc":"署名付きのやり取り、公開鍵の検証、権限委譲、来歴情報、技術的なポリシー制御、第三者が検証可能な証跡の設計・統合。","service2Type":"設計・検証","service3Title":"評価・技術サポート","service3Desc":"初期段階のアーキテクチャレビュー、エージェントの安全性評価、統合支援、技術文書の整備、継続的な開発サポート。案件ごとに範囲と成果物を合意します。","service3Type":"評価・支援","statementLabel":"長期的な方向性","statement1":"エージェントが動き、","statement2":"人間が舵を取る。","statementDesc":"独立したAIシステムが役立つ仕事に参加するとき、ID・権限・責任の所在が後付けにならない基盤を目指しています。安全のための仕組みは、最初からシステムに組み込まれるべきだと考えています。","contactLabel":"05 / お問い合わせ","contact1":"ともに築く、","contact2":"次のインフラ。","contactDesc":"自律型エージェント、安全な権限委譲、検証可能なシステムを検討していますか。課題や制約、実現したいことをお聞かせください。共同研究や範囲を明確にした開発のご相談を歓迎します。","footerStudio":"独立系AIシステム・信頼基盤開発スタジオ。<br>日本・横浜。","backTop":"ページ先頭へ ↗","photoLicense":"写真素材・ライセンス ↗","heroAlt":"青空の下に広がる、陽光の差し込む白い建築構造","interludeAlt":"陽光と影が生み出す、オレンジ色の建築のアーチ","phoneAlt":"柔らかな背景の前でスマートフォンを持つ手のイメージ写真","stairsAlt":"複数の階層と境界を想起させる建築の階段の写真"};
+ const translations = {"skip":"本文へ移動","navWhy":"視点","navMethod":"アプローチ","navWork":"プロダクト","navServices":"サービス","navContact":"お問い合わせ","eyebrow":"独立系AIシステム・信頼基盤開発スタジオ","hero1":"自律するAI。","hero2":"安全な境界。","hero3":"人間の主導権。","heroDesc":"NashHashは、端末内で動くパーソナルAIエージェントと、自律型システムの信頼性を支えるID・権限・検証の技術基盤を開発しています。実用的なプロダクトとプロトコル研究、受託エンジニアリングを組み合わせた事業です。","explore":"開発中の製品を見る","heroAside":"研究を起点としたエンジニアリング / 日本を拠点に活動","seal1":"信頼を、<br>技術に。","seal2":"人間とエージェントの<br>境界設計","scroll":"スクロールして見る","heroFoot":"NashHash / 独立系スタジオ / 日本","whyLabel":"01 / 課題","why1":"知能だけでは、","why2":"守れない","why3":"境界がある。","whyDesc":"ソフトウェアが意思決定し、ツールを使い、ほかのシステムと協働するようになると、行動のたびに問いが生まれます。誰が行動したのか。誰が許可したのか。何が起こり、どう確かめられるのか。これはモデルだけでなく、基盤設計の課題です。","whyNote":"AIの自律性に対する実践的な視点","whyQuote":"能力を高める。責任の所在を明確にする。","interludeLabel":"明確な境界から設計する","interludeText":"自律する自由。<br>信頼できる根拠。","methodLabel":"02 / アプローチ","method1":"自律性から","method2":"検証可能性へ。","step1Title":"識別する。","step1Desc":"やり取りの背後にあるシステムや暗号鍵を識別します。署名を使ったチャレンジ応答や記録で鍵の継続性を確かめます。署名が検証するのは鍵の保有であり、現実世界の本人性には別の証拠が必要です。","step2Title":"権限を定める。","step2Desc":"どの資源にアクセスでき、どの操作が許され、いつ承認が必要で、どう失効・取り消しできるのか。委譲する権限を明確に設計します。","step3Title":"結果を確かめる。","step3Desc":"重要な操作と結果を、検証可能な証跡として残します。署名付き通信、来歴情報、機械的に検証できるレシートなどを研究しています。","visualNote":"構想段階の概念図 / 完成済み製品ではありません。","workLabel":"03 / プロダクト・研究開発","work1":"研究成果を","work2":"使えるシステムへ。","workDesc":"ローカルで動作するパーソナルエージェントと、再利用可能なエージェント信頼基盤の要素技術を開発しています。各領域の開発段階を明示し、検証したコンポーネントを将来的に実用的な基盤サービスへ発展させることを目指します。","photoNote":"イメージ写真","proj1a":"スマホで動く","proj1b":"自律型エージェント。","proj1Desc":"一般的なスマートフォンや処理性能が限られた端末での利用を想定した、自律型パーソナルエージェントアプリを開発中です。端末内での実行、重要な操作に対する利用者の承認、必要な場合だけ外部の推論処理を使う設計を重視しています。","proj1Status":"パーソナルエージェントアプリ / 開発中","proj2a":"AIエージェントの","proj2b":"信頼基盤。","proj2Desc":"署名した鍵の確認、セッションをまたぐ鍵の継続性、公開されたエージェントの活動記録の検証を可能にする開発者向け要素技術を研究しています。下記の3つの仕様が、その技術的な出発点です。","proj2Status":"開発者向け信頼コンポーネント / 研究・試作","boundaryLabel":"研究領域 / 03 — 権限委譲とポリシー","boundary1":"エージェントが守れる","boundary2":"権限と証跡。","boundaryDesc":"提案中の権限委譲・証跡レイヤーでは、操作範囲を限定し、重要な操作に承認を求め、権限の期限や取り消しを設定し、行われた行動を記録する構造を検討しています。現在はインフラの設計段階であり、公開運用中のサービスではありません。","boundaryStatus":"権限委譲・証跡基盤 / 設計段階","servicesLabel":"05 / エンジニアリングサービス","services1":"構想を、","services2":"動くシステムへ。","servicesDesc":"自律型ソフトウェアを開発するチームに向けて、エージェント受託開発、信頼プロトコル設計、実現性調査、システム統合、技術サポートを提供します。案件ごとに成果物と範囲を明確にします。","service1Title":"エージェントシステム開発","service1Desc":"タスク指向エージェント、ローカル優先のアシスタント、実行基盤、ツール連携、マルチエージェントワークフローの設計・受託開発。技術的な実現性調査や限定的なPoCから着手できます。","service1Type":"開発・統合","service2Title":"ID・信頼プロトコル設計","service2Desc":"署名付きのやり取り、公開鍵の検証、権限委譲、来歴情報、技術的なポリシー制御、第三者が検証可能な証跡の設計・統合。","service2Type":"設計・検証","service3Title":"評価・技術サポート","service3Desc":"アーキテクチャレビュー、検証テスト計画、統合支援、技術仕様書の作成、エージェントシステムの継続的なサポート。案件ごとに範囲や検収基準を合意します。","service3Type":"評価・支援","statementLabel":"長期的な方向性","statement1":"エージェントが動き、","statement2":"人間が舵を取る。","statementDesc":"独立したAIシステムが役立つ仕事に参加するとき、ID・権限・責任の所在が後付けにならない基盤を目指しています。安全のための仕組みは、最初からシステムに組み込まれるべきだと考えています。","contactLabel":"06 / お問い合わせ","contact1":"ともに築く、","contact2":"次のインフラ。","contactDesc":"自律型エージェント、暗号鍵による識別、安全な権限委譲の開発を検討していますか。構築したいものと技術的な制約をお聞かせください。共同研究、受託開発、システム統合のご相談を歓迎します。","footerStudio":"独立系AIシステム・信頼基盤開発スタジオ。<br>日本・横浜。","backTop":"ページ先頭へ ↗","photoLicense":"写真素材・ライセンス ↗","heroAlt":"青空の下に広がる、陽光の差し込む白い建築構造","interludeAlt":"陽光と影が生み出す、オレンジ色の建築のアーチ","phoneAlt":"柔らかな背景の前でスマートフォンを持つ手のイメージ写真","stairsAlt":"複数の階層と境界を想起させる建築の階段の写真","navProtocols":"プロトコル","product1ScopeLabel":"開発で重視している機能","product1Point1":"端末性能に配慮したローカル実行","product1Point2":"利用者が管理するツール権限とタスク実行","product1Point3":"複雑な処理に限った外部推論の選択肢","product2ScopeLabel":"研究している構成要素","product2Point1":"公開鍵とチャレンジ応答による識別検証","product2Point2":"公開投稿の署名付き出所マーカー","product2Point3":"検証行為を記録する持ち運び可能なレシート","boundaryPath1":"権限を定義","boundaryPath2":"操作を承認","boundaryPath3":"証跡を記録","protocolLabel":"04 / プロトコル研究","protocolHeadline1":"信頼を、","protocolHeadline2":"検証可能な手順へ。","protocolIntro":"3つの関連仕様を通じて、エージェントが暗号学的な相手を識別し、公開メッセージの出所を示し、誰が何を検証したかを記録する方法を研究しています。共通する考え方は「鍵 → 署名 → 検証」です。","formula1":"鍵","formula2":"署名","formula3":"検証","p1Title1":"ハンドル名より","p1Title2":"鍵で識別する。","p1Body":"エージェントの名前は誰でも名乗れます。識別プロトコルは、公開鍵を相手の継続的な識別の基準として扱います。新しく生成した予測困難なノンスへの署名によって、応答者が対応する秘密鍵を現在保有していることを確認します。","p1Stage":"エージェント識別 / v0.2 研究プロトコル","p1Diagram":"チャレンジ応答の4ステップ","p1Step1Title":"挨拶","p1Step1":"2体のエージェントが会話を開始し、互いに挨拶します。","p1Step2Title":"公開鍵の交換","p1Step2":"双方が検証用の公開鍵を交換します。技術的な名刺のような役割です。","p1Step3Title":"新しいノンスへ署名","p1Step3":"検証側が一度限りの予測困難な値を送り、応答側が秘密鍵で署名します。","p1Step4Title":"署名を検証","p1Step4":"公開鍵で署名を確認し、その鍵のフィンガープリントと結果を対応づけます。","p1Caveat":"確認できるのは、チャレンジ時点でその秘密鍵を保有していたことです。法的な本人確認や、鍵の漏えい後の継続性まで保証するものではありません。初回の鍵のひも付け、鍵の更新・失効、リプレイ攻撃への対策も重要な設計課題です。","p2Title1":"投稿の出所を","p2Title2":"検証可能に。","p2Body":"投稿マーキング仕様は、公開されたエージェントの投稿の末尾に署名付きの短いマーカーを加える方式です。表示上のアカウント名だけに頼らず、第三者がマーカーと対応する公開鍵を確認して出所を検証できることを目指します。","p2Stage":"投稿マーキング / v0.1 仕様","p2Diagram":"投稿イメージ","p2PostText":"今回の共同作業の結果を公開しました。","p2MarkerLabel":"署名付き出所マーカー","p2Verify1":"マーカーを読む","p2Verify2":"公開鍵を確認","p2Verify3":"署名を検証","p2Caveat":"これは表記例であり、正確なデータ形式や投稿本文との結び付け方は仕様化が必要です。マーカーを別の投稿にコピーして流用できないよう、署名と対象コンテンツを正しく対応づける必要があります。","p3Title1":"検証した事実を","p3Title2":"持ち運べる記録へ。","p3Body":"信用レシートは、誰が・何を・いつ検証し、何を根拠に結果を出したかを記録する共有可能な形式を目指しています。共同で設計を進めており、v0.3は設計凍結に向けた段階です。完成した標準規格や運用中の検証ネットワークではありません。","p3Stage":"信用レシート / v0.3 設計中","p3Diagram":"概念的な検証レシート","receiptWho":"検証者","receiptWhoValue":"検証鍵や検証者の参照情報","receiptWhen":"日時","receiptWhenValue":"検証のタイムスタンプ","receiptWhat":"対象","receiptWhatValue":"主張や成果物の参照情報","receiptEvidence":"証拠","receiptEvidenceValue":"署名・検証情報の参照","receiptOutcome":"結果","receiptOutcomeValue":"検証の結果","p3Caveat":"ここに示すのは想定している情報の分類で、確定済みスキーマではありません。レシートは検証行為についての追跡可能な記録であり、エージェントの安全性や主張の真実性そのものを保証するものではありません。","protoBottomLabel":"設計上の考え方","protoBottomText":"既知の公開鍵に対する署名は、中央管理者の台帳がなくても検証できます。ただし、誰を信頼するべきか、鍵の紛失・更新にどう対応するか、紛争時にどう判断するかは、実運用で別途設計が必要です。","protoCta":"プロトコル開発の相談","serviceRouteLabel":"典型的な開発の進め方","serviceRoute1":"要件整理","serviceRoute2":"試作","serviceRoute3":"統合","serviceRoute4":"技術支援","addressLabel":"事業所在地","businessAddress":"〒220-0072<br>神奈川県横浜市西区浅間町1丁目4番3号<br>ウィザードビル402","engagementLabel":"ご相談内容","engagementText":"エージェント受託開発 · 信頼プロトコル設計 · システム統合 · 技術サポート"};
  const coreText={en:["IDENTITY / KEY CONTINUITY","AUTHORITY / CONTROLLED DELEGATION","EVIDENCE / VERIFIED OUTCOMES"],ja:["識別 / 鍵の継続性","権限 / 委譲と制御","証跡 / 結果の検証"]};
  const get=(s,r=document)=>r.querySelector(s);
  const all=(s,r=document)=>Array.from(r.querySelectorAll(s));
@@ -253,7 +452,7 @@ html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075e
    get("#menuButton").setAttribute("aria-label",language==="ja"?"メニューを開く":"Open navigation");
    document.title=language==="ja"?"NashHash — 自律するAI。安全な境界。":"NashHash — Autonomous Systems. Human Terms.";
    const meta=get('meta[name="description"]');
-   if(meta)meta.setAttribute("content",language==="ja"?"NashHashは自律型AIエージェントのID・権限・検証基盤を設計・開発する、日本の独立系AIシステム・信頼基盤開発スタジオです。":"NashHash is an independent AI systems and trust engineering studio in Japan, designing autonomous agents, verifiable identity and delegation, and custom agent infrastructure.");
+   if(meta)meta.setAttribute("content",language==="ja"?"NashHashはローカル型パーソナルエージェントや、暗号鍵によるエージェント識別・署名・検証・権限委譲の基盤を開発する、日本の独立系AIシステム開発スタジオです。":"NashHash develops local-first personal AI agents, cryptographic agent identity protocols, verifiable communications, delegation infrastructure and custom agent systems for organizations.");
    if(persist){try{localStorage.setItem("nashhash-language",language);}catch(e){}}
  }
  get("#enButton").addEventListener("click",()=>setLang("en",true));
@@ -317,7 +516,7 @@ html[lang="ja"] .hero h1{font-size:clamp(61px,7.7vw,123px);letter-spacing:-.075e
      updatePhase(best);
    }
    let active="";
-   ["why","method","work","services"].forEach(id=>{if(get("#"+id).getBoundingClientRect().top<=innerHeight*.4)active=id;});
+   ["why","method","work","protocols","services"].forEach(id=>{if(get("#"+id).getBoundingClientRect().top<=innerHeight*.4)active=id;});
    all(".nav-links a").forEach(a=>a.classList.toggle("active",a.hash.substring(1)===active));
    if(!reduced.matches&&!lowPower){
      const h=get("#heroArt").getBoundingClientRect();
